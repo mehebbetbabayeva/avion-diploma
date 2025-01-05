@@ -1,0 +1,59 @@
+.header-content{
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content .search-icon {
+    margin-right: 300px;
+  
+  }
+
+  .header-content h1 {
+    margin-left: 300px;
+  }
+
+  .header-cotent .basket-icon {
+    margin-left: 100px;
+  
+  }
+
+  .header-cotent .account-icon {
+    margin-right: 400px;
+  
+  }
+  
+  .header nav link {
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: none;
+  
+  
+  }
+  
+  .start-free-trial {
+    display: flex;
+    /* justify-content: space-between; Logo və bars arasında məsafəni bərabər edir */
+    /* align-items: center; Dikey olaraq ortalayır */
+  
+  }
+  
+  .Log-in {
+    background-color: #002D2D;
+  }
+  
+  
+  header nav {
+    display: none;
+  
+  }
+  
+  header button {
+    background-color: #008060;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: transparent;
+    border-radius: 5px;
+    display: none;
+  }

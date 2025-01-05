@@ -1,0 +1,11 @@
+
+
+.header-comp .nav-links{
+    background-color: #ffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+  }
