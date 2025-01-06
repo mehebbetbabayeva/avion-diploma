@@ -1,0 +1,55 @@
+
+  
+  .intro-left-side{
+    background-color:#2A254B;
+    color: #fff;
+    width: 760px;
+    height: 584px;
+  }
+  
+  .introduction h1 {
+    display: flex;
+    font-size: 32px;
+    padding: 60px;
+    font-size: 32px;
+   
+  }
+
+  .intro-left-side .view-collect {
+    display: flex;
+    background-color:#F9F9F926;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 150px;
+  
+  }
+  
+  .introduction h5 {
+    display: flex;
+    font-size: 32px;
+    padding: 60px;
+    font-size: 50px;
+   
+  }
+
+  
+  .intro-left-side h5 {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .intro-left-side {
+    padding-right: 15px;
+  }
+
+  .intro-right-side img {
+    display: flex;
+    margin-top: 27px;
+    margin-left: 78px;
+    width: 520px;
+    height: 584px;
+  }
