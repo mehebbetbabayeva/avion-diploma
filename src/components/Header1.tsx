@@ -4,16 +4,20 @@ import './Header1.css';
 import search from "../assets/images/header/Search.png";
 import basket from "../assets/images/header/Basket.png";
 import account from "../assets/images/header/Account.png";
+import { Link } from "react-router-dom";
 
 const Header1: React.FC = () => {
   return (
-    <header className="header py-3">
-      <div className="container">
+    <header >
+      <div className="header-top-container">
         <div className="header-content">
-          <img className="search-icon" src={search} alt="Search Icon" />
-          <h1 className="avion">Avion</h1>
-          <img className="basket-icon" src={basket} alt="basket Icon" />
-          <img className="account-icon" src={account} alt="account Icon" />
+          <img className="header-icon" src={search} alt="Search Icon" />
+         <Link to="/" className="avion">Avion</Link> 
+          <div className="header-icon-container">
+          <img className="header-icon" src={basket} alt="basket Icon"  />
+          <img className="header-icon" src={account} alt="account Icon" />
+          </div>
+         
 
           
           {/* <nav className="nav-links-left d-none d-lg-flex">
