@@ -18,19 +18,6 @@ const Header1: React.FC = () => {
           <img className="header-icon" src={account} alt="account Icon" />
           </div>
          
-
-          
-          {/* <nav className="nav-links-left d-none d-lg-flex">
-            <Link to="/start">Start</Link>
-            <Link to="/sell">Sell</Link>
-            <Link to="/market">Market</Link>
-            <Link to="/manage">Manage</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/learn">Learn</Link>
-          </nav> */}
-
-         
-          
         </div>
       </div>
     </header>

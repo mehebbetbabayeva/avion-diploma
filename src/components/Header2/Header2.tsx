@@ -8,7 +8,7 @@ const Header2: React.FC = () => {
         <div className="container">
           <div className="header-comp">
             
-            <nav className="nav-links d-none d-lg-flex header2-links">
+            <nav className="nav-links  d-lg-flex header2-links">
               <Link to="">About</Link>
               <Link to="">Products</Link>
               <Link to="">Shopping</Link>

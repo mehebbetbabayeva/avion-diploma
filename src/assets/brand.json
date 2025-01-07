@@ -1,0 +1,47 @@
+[
+    {   "id": 1,
+        "brand_name": "Store builder",
+        "brand_context": "Bring your brand to life with our easy-to-use store creator. No coding expertise required—just your next big idea.",
+        "brand_nav": "Build the brand you want"
+        
+        
+    },
+
+    {"id": 2,
+        "brand_name": "Themes",
+        "brand_context": "Select from hundreds of customizable templates crafted by a community of the designers and experts.",
+        "brand_nav": "Explore more Themes"
+        
+    },
+
+    {"id": 3,
+        "brand_name": "App store",
+        "brand_context": "Add more features and functionality to your online store with the app extensions from perfect Shopify partners.",
+        "brand_nav": "There's an app for that"
+        
+    },
+
+    {"id": 4,
+        "brand_name": "Marketplace Maker",
+        "brand_context": "Select from hundreds of customizable templates crafted by a community of the designers and experts.",
+        "brand_nav": "Shape Your Identity"
+        
+    },
+
+    {"id": 5,
+        "brand_name": "Shop Designer",
+        "brand_context": "Bring your brand to life with our shop designer. No technical knowledge required—only your unique creativity.",
+        "brand_nav": "Design with Purpose"
+        
+    },
+
+    {"id": 6,
+        "brand_name": "Business Launcher",
+        "brand_context": "Build your online presence using our friendly store builder. No coding skills necessary, we'll help with the rest.",
+        "brand_nav": "Create Your Unique Style"   
+    }
+
+    
+]
+
+
