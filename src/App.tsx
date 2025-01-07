@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
-import Header1 from './components/Header1'
-import Header2 from './components/Header2'
-import Introduction from './components/Introduction';
+import Header1 from './components/Header/Header1'
+import Header2 from './components/Header2/Header2'
+import Introduction from './components/Introduction/Introduction';
 
 
 function App() {

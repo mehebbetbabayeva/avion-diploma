@@ -1,0 +1,51 @@
+
+  
+  .intro-left-side{
+    background-color:#2A254B;
+    color: #fff;
+    width: 60%;
+    height: 100%;
+
+  }
+  
+  .introduction h1 {
+    padding: 40px 60px;
+    font-size: 32px;
+  }
+
+  .intro-left-side .view-collect {
+    background-color:#F9F9F926;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: transparent;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  
+  }
+  
+  .intro-left-side h5{
+    padding: 60px;
+    font-size: 18px;
+   font-weight: 400;
+  
+  }
+  .intro-right-side{
+    width: 40%;
+    height: 100%;
+  }
+
+  .intro-right-side img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  
+  }
+
+  .intro-container{
+   
+    height: 584px;
+    display: flex;
+
+  }

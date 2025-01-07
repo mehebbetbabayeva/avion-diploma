@@ -1,14 +1,14 @@
 import React from 'react'
 import './Introduction.css';
-import intro from "../assets/images/introduction/intro.svg";
+import intro from "../../assets/images/introduction/intro.svg";
 
 const Introduction: React.FC = () => {
     return (
         <section className="introduction py-5">
             <div className="container">
-                <div className="row align-items-center">
+                <div className="intro-container">
                     {/* Sol tərəf */}
-                    <div className="col-12 col-md-6">
+             
                         <div className="intro-left-side">
                             <h1>
                             The furniture brand for the <br /> future, with timeless designs
@@ -22,10 +22,10 @@ const Introduction: React.FC = () => {
                             using modern web technologies.
                             </h5>
                         </div>
-                    </div>
+                  
 
                     {/* Sağ tərəf */}
-                    <div className="col-12 col-md-6 d-flex justify-content-center">
+          
                         <div className="intro-right-side">
                             <img
                                 src={intro}
@@ -34,7 +34,7 @@ const Introduction: React.FC = () => {
                             />
 
                         </div>
-                    </div>
+                  
                 </div>
             </div>
         </section>
