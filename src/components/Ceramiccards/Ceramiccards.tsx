@@ -37,7 +37,7 @@ const Ceramiccards: React.FC = () => {
       <h3>New ceramics</h3>
       <div className='swiper-container'>
       <Swiper
-    slidesPerView={4}
+    slidesPerView={3}
     spaceBetween={30}
 
     breakpoints={{
@@ -67,6 +67,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
+    <button className="view-collect">View collection</button>
       </div>
  
     </div>

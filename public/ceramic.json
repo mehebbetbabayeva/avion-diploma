@@ -1,27 +1,34 @@
 [
     {
         "id":1,
-        "ceramic_image": "/assets/images/ceramiccard/dandychair.svg",
+        "ceramic_image": "../src/assets/images/ceramiccard/dandychair.svg",
         "ceramic_context": "The Dandy chair",
         "ceramic_price": "£250"
     },
     {
         "id":2,
-        "ceramic_image": "/assets/images/ceramiccard/rusticvase.svg",
+        "ceramic_image": "../src/assets/images/ceramiccard/rusticvase.svg",
         "ceramic_context": "Rustic Vase Set",
         "ceramic_price": "£155"
     },
     {
         "id":3,
-        "ceramic_image": "/assets/images/ceramiccard/silkyvase.svg",
+        "ceramic_image": "../src/assets/images/ceramiccard/silkyvase.svg",
         "ceramic_context": "The Silky Vase",
         "ceramic_price": "£125"
     },
 
-    {  "id":4,
-        "ceramic_image": "/assets/images/ceramiccard/basicvase.svg",
-        "ceramic_context": "Basic white vase",
-        "ceramic_price": "£85"
+    {
+        "id":4,
+        "ceramic_image": "../src/assets/images/ceramiccard/lucylamp.svg",
+        "ceramic_context": "The Lucy Lamp",
+        "ceramic_price": "£399"
+    },
+
+    {  "id":5,
+        "ceramic_image": "../src/assets/images/ceramiccard/dandychair2.svg",
+        "ceramic_context": "Dandy Chair",
+        "ceramic_price": "£250"
     }
    
    

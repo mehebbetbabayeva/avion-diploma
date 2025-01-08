@@ -15,8 +15,8 @@ const ceramiccard: React.FC<KartlarinProps> = ({ imageProps, contextProps, price
       <div className="card rounded-0">
         <div className="card-body">
           <img src={imageProps}/>
-          <p className="card-title">{priceProps}</p>
           <p className="card-text">{contextProps}</p>
+          <p className="card-title">{priceProps}</p>
        
         </div>
 

@@ -4,6 +4,7 @@ import Header2 from './components/Header2/Header2'
 import Introduction from './components/Introduction/Introduction'
 import Brandcards from './components/Brandcards/Brandcards'
 import Ceramiccards from './components/Ceramiccards/Ceramiccards'
+import Accordion from './components/Accordion/Accordion'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Introduction/>
       <Brandcards/>
       <Ceramiccards/>
+      <Accordion/>
       
     </>
   );

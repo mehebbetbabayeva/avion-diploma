@@ -1,0 +1,62 @@
+.accordion-section {
+    background-color: #ccc
+  }
+  
+  .accordion-section h2 {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+   
+  }
+  
+  .card-text {
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .ac-panel a {
+    color: #000;
+    margin-left: 300px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .ac p{
+    font-size: 16px;
+    margin: 25px 0 20px 0;
+    
+  }
+  
+  .ac {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+  
+  }
+  
+  .ac-header button {
+    color: #fff !important;
+    font-size: 20px !important;
+    align-items: center;
+  }
+  
+  .ac-text {
+    color: #000 !important;
+    text-align: left;
+  }
+  
+  .ac-panel {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .ac-trigger {
+    background: none;
+    border: none;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
