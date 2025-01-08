@@ -1,28 +1,22 @@
-import React, {useEffect, useState} from 'react'
-import Brandcard from './Brandcard'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import axios from 'axios';
-
-interface Melumat{
-    id:number;
-    brand_name:string; 
-    brand_context:string;
-    brand_nav:string;
-}
+import "./BrandCards.css"
+import Brandcard from './Brandcard';
+import data from "../../../public/brand.json"
 
 
 
-const brandcards: React.FC = () => {
 
-const [melumat, setMelumat] = useState<Melumat[]>([])
-useEffect(()=> {
-    
-    axios.get("/assets/brand.json").then(cavab => setMelumat(cavab.data))
-  }, [melumat])
+const Brandcards: React.FC = () => {
+
+
 
 
   return (
-    <Swiper
+    <div className='brandcard-container'>
+      <h3>What makes our brand different</h3>
+      <div className='swiper-container'>
+      <Swiper
     slidesPerView={4}
     spaceBetween={30}
 
@@ -41,9 +35,9 @@ useEffect(()=> {
     className="mySwiper"
   >
 
-  
+
         {
-          melumat && melumat.map(birMelumat => (
+          data && data.map(birMelumat => (
             <SwiperSlide key={birMelumat.id}>
                  <Brandcard nameProps ={birMelumat.brand_name} contextProps={birMelumat.brand_context} navProps={birMelumat.brand_nav}  />
               </SwiperSlide>
@@ -53,8 +47,11 @@ useEffect(()=> {
       
 
     </Swiper>
+      </div>
+ 
+    </div>
 
   )
 }
 
-export default brandcards
+export default Brandcards
