@@ -3,7 +3,7 @@ import Header1 from './components/Header/Header1'
 import Header2 from './components/Header2/Header2'
 import Introduction from './components/Introduction/Introduction'
 import Brandcards from './components/Brandcards/Brandcards'
-import Ceramiccards from './components/Ceramiccards/CeramicCards'
+import Ceramiccards from './components/Ceramiccards/Ceramiccards'
 
 function App() {
   return (

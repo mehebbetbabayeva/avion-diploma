@@ -1,46 +1,42 @@
-// import React, {useEffect, useState} from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import axios from 'axios';
-// import Ceramiccard from './Ceramiccard';
+import "./Ceramicards.css"
+import ceramiccard from './Ceramiccard'
+import axios from "axios";
+import { useEffect, useState } from 'react';
 
 
-// //
+interface Melumat {
+  id:number,
+  ceramic_image:string,
+  ceramic_context:string,
+  ceramic_price:string
+}
 
-// interface Melumat {
-//   id:number;
-//   cards_image:string;
-//   cards_article:string;
-//   person_names:string;
-
-// }
-
-
-const Ceramiccards:React.FC = () => {
-// bu ancaq sehife yuklenende birce defe render olunur bir daha render olmur
-// melumat initialState
-//cache
-//useState cache Redux Redux TOOLKIT QUERY
-//<> Generics
-// state 
-// const [melumat, setMelumat] = useState<Melumat[]>([])
-
-//localStorage , sessionStorage
-
-  // useEffect(()=> {
-  //   // TODO HTTP metodlar get post put delete 80 443
-  //   // ssl 
-  //   // ssh 21 61000
-  //   // ? nmap 
-  //   //Promise Chaining 
-  //   // PROMISE PROMISE CHAINING CALLBACK // CRUD json-server localStorage TODOAPP
-  //   axios.get("/assets/ceramic.json").then(cavab => setMelumat(cavab.data))
-  // }, [melumat])
+const ceramiccards: React.FC = () => {
 
 
+  const [data, setData] = useState<Melumat[]>([]); 
+  useEffect(() => {
+    
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("/ceramic.json"); 
+        setData(response.data);
+      
+      } catch (error) {
+        console.error("Data fetch error:", error);
+       
+      }
+    };
 
+    fetchData();
+  }, []);
   return (
-    <Swiper
+    <div className='ceramiccard-container'>
+      <h3>New ceramics</h3>
+      <div className='swiper-container'>
+      <Swiper
     slidesPerView={4}
     spaceBetween={30}
 
@@ -56,23 +52,26 @@ const Ceramiccards:React.FC = () => {
         },
       }}
     
-    className="mySwiper persons-cards py-5 cardsSwiper"
+    className="mySwiper"
   >
 
-   test
-        {/* {
-          melumat && melumat.map(birMelumat => (
+
+        {
+          data && data.map(birMelumat => (
             <SwiperSlide key={birMelumat.id}>
-                 <Ceramiccard shekilProps ={birMelumat.cards_image} articleProps={birMelumat.cards_article} muellifProps={birMelumat.person_names}  />
+                 <ceramiccard imageProps ={birMelumat.ceramic_image} contextProps={birMelumat.ceramic_context} priceProps={birMelumat.ceramic_price}  />
               </SwiperSlide>
           ))
         }
        
-       */}
+      
 
     </Swiper>
-    
+      </div>
+ 
+    </div>
+
   )
 }
 
-export default Ceramiccards
+export default ceramiccards
