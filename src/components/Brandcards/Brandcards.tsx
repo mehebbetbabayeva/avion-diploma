@@ -2,16 +2,36 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./BrandCards.css"
 import Brandcard from './Brandcard';
-import data from "../../../public/brand.json"
+import axios from "axios";
+import { useEffect, useState } from 'react';
 
 
-
+interface Melumat {
+  id:number,
+  brand_name:string,
+  brand_context:string,
+  brand_nav:string
+}
 
 const Brandcards: React.FC = () => {
 
 
+  const [data, setData] = useState<Melumat[]>([]); 
+  useEffect(() => {
+    
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("/brand.json"); 
+        setData(response.data);
+      
+      } catch (error) {
+        console.error("Data fetch error:", error);
+       
+      }
+    };
 
-
+    fetchData();
+  }, []);
   return (
     <div className='brandcard-container'>
       <h3>What makes our brand different</h3>

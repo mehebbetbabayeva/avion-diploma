@@ -10,7 +10,7 @@ interface KartlarinProps {
   muellifProps:string;
 }
 
-const PersonCard:React.FC<KartlarinProps> = ({shekilProps, articleProps, muellifProps}) => {
+const Ceramiccard:React.FC<KartlarinProps> = ({shekilProps, articleProps, muellifProps}) => {
   return (
 
     <div className="card">
@@ -25,4 +25,4 @@ const PersonCard:React.FC<KartlarinProps> = ({shekilProps, articleProps, muellif
   )
 }
 
-export default PersonCard
+export default Ceramiccard

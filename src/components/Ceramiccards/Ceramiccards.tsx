@@ -1,17 +1,19 @@
-import React, {useEffect, useState} from 'react'
-import Ceramiccard from './CeramicCard'
+// import React, {useEffect, useState} from 'react'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import axios from 'axios';
+// import axios from 'axios';
+// import Ceramiccard from './Ceramiccard';
 
-//
 
-interface Melumat {
-  id:number;
-  cards_image:string;
-  cards_article:string;
-  person_names:string;
+// //
 
-}
+// interface Melumat {
+//   id:number;
+//   cards_image:string;
+//   cards_article:string;
+//   person_names:string;
+
+// }
 
 
 const Ceramiccards:React.FC = () => {
@@ -21,19 +23,19 @@ const Ceramiccards:React.FC = () => {
 //useState cache Redux Redux TOOLKIT QUERY
 //<> Generics
 // state 
-const [melumat, setMelumat] = useState<Melumat[]>([])
+// const [melumat, setMelumat] = useState<Melumat[]>([])
 
 //localStorage , sessionStorage
 
-  useEffect(()=> {
-    // TODO HTTP metodlar get post put delete 80 443
-    // ssl 
-    // ssh 21 61000
-    // ? nmap 
-    //Promise Chaining 
-    // PROMISE PROMISE CHAINING CALLBACK // CRUD json-server localStorage TODOAPP
-    axios.get("/assets/ceramic.json").then(cavab => setMelumat(cavab.data))
-  }, [melumat])
+  // useEffect(()=> {
+  //   // TODO HTTP metodlar get post put delete 80 443
+  //   // ssl 
+  //   // ssh 21 61000
+  //   // ? nmap 
+  //   //Promise Chaining 
+  //   // PROMISE PROMISE CHAINING CALLBACK // CRUD json-server localStorage TODOAPP
+  //   axios.get("/assets/ceramic.json").then(cavab => setMelumat(cavab.data))
+  // }, [melumat])
 
 
 
@@ -57,8 +59,8 @@ const [melumat, setMelumat] = useState<Melumat[]>([])
     className="mySwiper persons-cards py-5 cardsSwiper"
   >
 
-  
-        {
+   test
+        {/* {
           melumat && melumat.map(birMelumat => (
             <SwiperSlide key={birMelumat.id}>
                  <Ceramiccard shekilProps ={birMelumat.cards_image} articleProps={birMelumat.cards_article} muellifProps={birMelumat.person_names}  />
@@ -66,7 +68,7 @@ const [melumat, setMelumat] = useState<Melumat[]>([])
           ))
         }
        
-      
+       */}
 
     </Swiper>
     
