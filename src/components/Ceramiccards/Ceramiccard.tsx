@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ceramicCards.css"
+import "./Ceramiccards.css"
 
 interface KartlarinProps {
   imageProps: string;

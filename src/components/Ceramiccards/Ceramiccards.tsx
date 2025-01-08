@@ -1,7 +1,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "./Ceramicards.css"
-import ceramiccard from './Ceramiccard'
+import "./Ceramiccards.css"
+import Ceramiccard from './Ceramiccard'
 import axios from "axios";
 import { useEffect, useState } from 'react';
 
@@ -13,7 +13,7 @@ interface Melumat {
   ceramic_price:string
 }
 
-const ceramiccards: React.FC = () => {
+const Ceramiccards: React.FC = () => {
 
 
   const [data, setData] = useState<Melumat[]>([]); 
@@ -59,7 +59,7 @@ const ceramiccards: React.FC = () => {
         {
           data && data.map(birMelumat => (
             <SwiperSlide key={birMelumat.id}>
-                 <ceramiccard imageProps ={birMelumat.ceramic_image} contextProps={birMelumat.ceramic_context} priceProps={birMelumat.ceramic_price}  />
+                 <Ceramiccard imageProps ={birMelumat.ceramic_image} contextProps={birMelumat.ceramic_context} priceProps={birMelumat.ceramic_price}  />
               </SwiperSlide>
           ))
         }
@@ -74,4 +74,4 @@ const ceramiccards: React.FC = () => {
   )
 }
 
-export default ceramiccards
+export default Ceramiccards
