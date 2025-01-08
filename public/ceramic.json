@@ -1,0 +1,41 @@
+[
+    {
+        "id":1,
+        "cards_image": "/assets/images/cards/firstcard.svg",
+        "cards_article": "I can always find what I’m looking for on Splice, whether it’s the exact sound I want or just a bit of inspiration.",
+        "person_names": "Andrew Huang"
+    },
+    {
+        "id":2,
+        "cards_image": "/assets/images/cards/secondcard.svg",
+        "cards_article": "Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the top VSTs.",
+        "person_names": "KSHMR"
+    },
+    {
+        "id":3,
+        "cards_image": "/assets/images/cards/thirdcard.svg",
+        "cards_article": "It’s been fun to dive into Splice’s creator community and explore tools that support my own creative process.",
+        "person_names": "Kesha Lee"
+    },
+
+    {  "id":4,
+        "cards_image": "/assets/images/cards/firstcard.svg",
+        "cards_article": "I can always find what I’m looking for on Splice, whether it’s the exact sound I want or just a bit of inspiration.",
+        "person_names": "Andrew Second"
+    },
+    {
+        "id":5,
+        "cards_image": "/assets/images/cards/secondcard.svg",
+        "cards_article": "Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the top VSTs.",
+        "person_names": "KSHMR Second"
+    },
+    {
+        "id":6,
+        "cards_image": "/assets/images/cards/thirdcard.svg",
+        "cards_article": "It’s been fun to dive into Splice’s creator community and explore tools that support my own creative process.",
+        "person_names": "Kesha Lee Second"
+    }
+
+   
+]
+
