@@ -34,7 +34,7 @@ const Ceramiccards: React.FC = () => {
   }, []);
   return (
     <div className='ceramiccard-container'>
-      <h3>New ceramics</h3>
+      <h3 className='ceramic-title'>New ceramics</h3>
       <div className='swiper-container'>
       <Swiper
     slidesPerView={3}
@@ -67,7 +67,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
-    <button className="view-collect">View collection</button>
+   <div className='ceramic-button'><button className="view-collect">View collection</button></div> 
       </div>
  
     </div>

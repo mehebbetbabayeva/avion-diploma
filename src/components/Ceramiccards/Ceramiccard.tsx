@@ -13,10 +13,10 @@ const ceramiccard: React.FC<KartlarinProps> = ({ imageProps, contextProps, price
   return (
     <div className="swiper-slide">
       <div className="card rounded-0">
-        <div className="card-body">
+        <div className="card-body" style={{color:"#2A254B"}}>
           <img src={imageProps}/>
-          <p className="card-text">{contextProps}</p>
-          <p className="card-title">{priceProps}</p>
+          <p className="card-text" style={{fontSize:"20px"}}>{contextProps}</p>
+          <p className="card-title" style={{fontSize:"18px"}}>{priceProps}</p>
        
         </div>
 
