@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "ceramic_image": "../src/assets/images/ceramiccard/dandychair.svg",
+        "ceramic_image": "../src/assets/images/ceramiccard/dandychair.png",
         "ceramic_context": "The Dandy chair",
         "ceramic_price": "£250"
     },
