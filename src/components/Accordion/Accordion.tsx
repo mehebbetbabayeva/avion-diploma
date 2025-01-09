@@ -79,7 +79,7 @@ const Accordion: React.FC = () => {
                       className="ac-trigger"
                       onClick={() => toggleAccordion(index)}
                     >
-                      {item.title}
+                          {item.title}
                     </button>
                   </h2>
                   <div

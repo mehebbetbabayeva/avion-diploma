@@ -35,3 +35,32 @@
   color: #22202E;
   font-size: 24px;
 }
+
+.mobile-open-icon{
+  display: none;
+}
+.menu{
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .mobile-open-icon{
+    display: block;
+  }
+  .menu{
+   display: block;
+    height: 100vh;
+
+  }
+  .menu nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px ;
+  }
+  .menu nav a{
+    color: #726E8D;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}

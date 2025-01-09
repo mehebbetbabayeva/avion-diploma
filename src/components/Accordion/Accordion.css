@@ -1,62 +1,83 @@
+
 .accordion-section {
-    background-color: #ccc
-  }
-  
-  .accordion-section h2 {
-    color: #000;
-    font-size: 30px;
-    text-align: center;
-   
-  }
-  
-  .card-text {
-    color: #000;
-    font-size: 14px;
-  }
-  
-  .ac-panel a {
-    color: #000;
-    margin-left: 300px;
-    margin-top: 30px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .ac p{
-    font-size: 16px;
-    margin: 25px 0 20px 0;
-    
-  }
-  
-  .ac {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-  
-  }
-  
-  .ac-header button {
-    color: #fff !important;
-    font-size: 20px !important;
-    align-items: center;
-  }
-  
-  .ac-text {
-    color: #000 !important;
-    text-align: left;
-  }
-  
-  .ac-panel {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  .ac-trigger {
-    background: none;
-    border: none;
-    color: inherit;
-    text-align: left;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  color: #fff;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.accordion-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.ac {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ac-header button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.ac-header button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ac-panel {
+  background: #fff;
+  color: #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.ac-panel.d-block {
+  max-height: 300px;
+}
+
+.ac-text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 15px 0;
+}
+
+.ac-panel a {
+  display: inline-block;
+  font-size: 14px;
+  color: #4a90e2;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.ac-panel a:hover {
+  text-decoration: underline;
+}
+
+
+.ac {
+  transition: transform 0.3s ease;
+}
+
+.ac:hover {
+  transform: translateY(-5px);
+}
