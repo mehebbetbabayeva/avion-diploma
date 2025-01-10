@@ -4,8 +4,8 @@ import intro from "../../assets/images/introduction/intro.svg";
 
 const Introduction: React.FC = () => {
     return (
-        <section className="introduction py-5">
-            <div className="container">
+        <section className="introduction">
+        
                 <div className="intro-container">
                     {/* Sol tərəf */}
              
@@ -36,7 +36,7 @@ const Introduction: React.FC = () => {
                         </div>
                   
                 </div>
-            </div>
+       
         </section>
     )
 }

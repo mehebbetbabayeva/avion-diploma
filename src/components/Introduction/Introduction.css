@@ -1,5 +1,7 @@
 
-  
+  .introduction{
+    margin: 50px 0;
+  }
   .intro-left-side{
     background-color:#2A254B;
     color: #fff;
@@ -51,30 +53,39 @@
   }
 
   @media (min-width: 320px) and (max-width:767px) {
-
+  
+    .introduction{
+      margin:  0;
+    }
     .intro-container {
       flex-direction: column; 
       align-items: center; 
     }
   
-    .intro-left-side, 
-    .intro-right-side {
+    .intro-left-side{
       flex: none; 
       width: 100%;
-      text-align: center; 
+  
+    
     }
 
     .intro-left-side{
       background-color:#2A254B;
       color: #fff;
-      width: 96%;
-      height: 94%;
-  
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+   
     }
     
     .introduction h1 {
-      padding: 40px 14px;
-      font-size: 22px;
+    
+      padding: 20px;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 400;
+      margin-top: 50px;
     }
   
     .intro-left-side .view-collect {
@@ -90,20 +101,19 @@
     }
     
     .intro-left-side h5{
-      padding: 26px;
+      margin: 0;
+      margin-top: 50px;
       font-size: 15px;
      font-weight: 400;
-    
+     order: 2;
+     padding: 20px;
+
     }
     .intro-right-side{
-      width: 96%;
-      height: 121%;
+      display: none;
     }
   
-    .intro-right-side img {
-      display: none;
-    
-    }
+
   
     .intro-container{
      
@@ -111,5 +121,10 @@
       display: flex;
   
     }
-
+    .view-collect{
+      order: 3;
+      margin-top: 20px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
