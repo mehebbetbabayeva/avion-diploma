@@ -7,6 +7,8 @@ import Ceramiccards from './components/Ceramiccards/Ceramiccards'
 import Accordion from './components/Accordion/Accordion'
 import Popularcards from './components/Popularcards/Popularcards'
 import Benefit from './components/Benefit/Benefit'
+import London from './components/London/London'
+import Footers from './components/Footers/Footers'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Accordion/>
       <Popularcards/>
       <Benefit/>
+      <London/>
+      <Footers/>
      
       
     </>

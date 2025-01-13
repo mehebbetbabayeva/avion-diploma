@@ -1,0 +1,48 @@
+.footer {
+  background-color:#2A254B
+  }
+  
+  
+  
+  .footer-center-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .footer-center-links a {
+    margin: 10px 0;
+  }
+  
+  .footer-right img {
+    margin-bottom: 20px;
+  }
+  
+  .footer-right h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  
+  }
+  
+
+  .footer-center h5 {
+    margin-top: 20px;
+    color: #ccc;
+  }
+  
+  .footer{
+    color: #fff;
+  }
+  
+  .footer-center-links{
+    color: #fff;
+  }
+  
+  
+  
