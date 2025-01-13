@@ -1,19 +1,19 @@
 import React from 'react'
-import './Footers.css'
-import footerem from "../../assets/images/footerem/facebook.svg";
-import footerem from "../../assets/images/footerem/instagram.svg";
-import footerem from "../../assets/images/footerem/linkedin.svg";
-import footerem from "../../assets/images/footerem/twitter.svg";
-import footerem from "../../assets/images/footerem/youtube.svg";
+import "./Footes.css"
+import facebook from "../../assets/images/footerem/facebook.svg";
+import instagram from "../../assets/images/footerem/instagram.svg";
+import twitter from "../../assets/images/footerem/linkedin.svg";
+import linkedin from "../../assets/images/footerem/twitter.svg";
+import youtube from "../../assets/images/footerem/youtube.svg";
 
 
 const Footers: React.FC = () => {
     return (
-        <footer className="footer py-5">
-            <div className="container">
-                <div className="row">
+        <footer className="footer">
+            
+                <div className="ust-footer">
 
-                    <div className="col-12 col-md-3 col-lg-2 footer-center">
+                    <div className=" ">
                         <h5 className="text-uppercase">Menu</h5>
                         <div className="footer-center-links">
                             <a href="" className="text-secondary">New arrivals</a>
@@ -24,7 +24,7 @@ const Footers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-md-3 col-lg-2  footer-center">
+                    <div className="">
                         <h5 className="text-uppercase">Categories</h5>
                         <div className="footer-center-links">
                             <a href="" className="text-secondary">Crockery</a>
@@ -36,7 +36,7 @@ const Footers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-md-3 col-lg-2 footer-center">
+                    <div className=" ">
                         <h5 className="text-uppercase">Our company</h5>
                         <div className="footer-center-links">
                             <a href="" className="text-secondary">About us</a>
@@ -48,25 +48,30 @@ const Footers: React.FC = () => {
                     </div>
 
 
-                    <div className="col-12 col-md-3">
-                        <div className="footer-right mt-9 ">
+        
+                        <div className="footer-right">
                             <h4>Shopify</h4>
                             <form>
                                 <div className="email-container">
                                     <input type="text" placeholder="your@email.com" />
-                                    <button className="Sign up" id="Sign-up">
-                                        Sign-up
+                                    <button className="footer-button" id="Sign-up">
+                                        Sign up
                                     </button>
                                 </div>
                             </form>
 
 
-                            <div className=" footer footer py-5">
-                                <div className="container">
-
+                         
+                        </div>
+                 
+                </div>
+              <div>
+              <div className="alt-footer">
+                       
+                                <h2 >Copyright 2022 Avion LTD</h2>
                                     <div className="social-links">
-                                        
-                                    <h3>Copyright 2022 Avion LTD</h3>
+
+                                
 
                                         <a href=""><img src={facebook} alt="" /></a>
                                         <a href=""><img src={instagram} alt="" /></a>
@@ -75,19 +80,18 @@ const Footers: React.FC = () => {
                                         <a href=""><img src={youtube} alt="" /></a>
                                     </div>
 
-                                   
-                                    
 
-                                    </div>
 
-                                </div>
+
+                     
+
                             </div>
-                        </div>
-                    </div>
-                </footer>
+              </div>
+      
+        </footer>
 
-     )
+    )
 
 }
 
- export default Footers
+export default Footers

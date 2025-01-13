@@ -59,3 +59,21 @@ margin-top: 40px;
   font-size: 16px;
   text-align: center;
 }
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit{
+  
+    padding: 40px 10px;
+  }
+  .bene-side h1{
+  text-align: center;
+  }
+  .email-container input {
+    width: 150px;
+  
+  }
+  
+  
+ 
+}

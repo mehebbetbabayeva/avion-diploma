@@ -39,11 +39,11 @@ const Popularcards: React.FC = () => {
  
 
         {
-          data && data.map((birMelumat,index) => (
+          data && data.map((birMelumat) => (
       
             <div
               className="popularcard"
-              style={{ width: index === 0 ? "630px" : "300px" }} 
+            
             >
               <Popularcard
                 imageProps={birMelumat.popular_image}

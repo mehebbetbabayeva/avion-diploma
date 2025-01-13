@@ -7,6 +7,7 @@
     padding: 100px 60px;
     display: flex;
     flex-direction: column;
+   
     
 }
 .popular-button{
@@ -31,3 +32,28 @@
     align-items: center;
     justify-content: space-between;
 }
+.popularcard {
+    width: 300px;
+  }
+
+  .popularcard:first-child {
+    width: 630px; 
+  }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .popularcards-container{
+        flex-direction: column; 
+    }
+    .popularcard:first-child {
+        width: 100%; 
+        
+      }
+      .popularcard {
+        width: 100%; 
+
+      }
+      img{
+        width: 100%;
+        height: 250px;
+      }
+  }
