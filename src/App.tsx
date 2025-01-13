@@ -5,6 +5,8 @@ import Introduction from './components/Introduction/Introduction'
 import Brandcards from './components/Brandcards/Brandcards'
 import Ceramiccards from './components/Ceramiccards/Ceramiccards'
 import Accordion from './components/Accordion/Accordion'
+import Popularcards from './components/Popularcards/Popularcards'
+import Benefit from './components/Benefit/Benefit'
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       <Brandcards/>
       <Ceramiccards/>
       <Accordion/>
+      <Popularcards/>
+      <Benefit/>
+     
       
     </>
   );

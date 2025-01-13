@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "popular_image": "../src/assets/images/popularcard/sofa.png",
+        "popular_context": "The Poplar suede sofa",
+        "popular_price": "£980"
+    },
+    {
+        "id":2,
+        "popular_image": "../src/assets/images/popularcard/dandychair.png",
+        "popular_context": "The Dandy chair",
+        "popular_price": "£250"
+    },
+    {
+        "id":3,
+        "popular_image": "../src/assets/images/popularcard/dandychair2.png",
+        "popular_context": "The Dandy chair",
+        "popular_price": "£250"
+    }
+
+    
+   
+]
+
