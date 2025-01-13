@@ -1,6 +1,8 @@
 
 .benefit{
     margin:  0;
+    background-color: #F9F9F9;
+    padding: 40px 60px;
   }
   .bene-container {
     flex-direction: column; 
@@ -15,32 +17,45 @@
 .email-container {
    display: flex;
 
+margin-top: 40px;
 } 
 
 .email-container input {
-  width: 15%;
+  width: 350px;
   background-color: #f5f5f5;
   padding: 10px;
   border-color: transparent;
-  border-radius: 5px;
-  margin-top: 40px;
-  margin-bottom: 24px;
   color: #000;
   font-size: 11px;
-
+outline: none;
 }
 
 
 .email-container button {
   display: flex;
-  background-color: #000;
+  background-color: #2A254B;
   color: #fff;
   padding: 15px 30px;
   border-color: transparent;
-  border-radius: 0px;
-  margin-top: 40px;
-  margin-left: 0px;
-  margin-bottom: 24px;
   cursor: pointer;
+  outline: none;
 
+}
+.bene-side{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.bene-side h1{
+  color: #2A254B;
+  font-size: 36px;
+  font-weight: 400;
+}
+.bene-side p{
+  color: #2A254B;
+  font-size: 16px;
+  text-align: center;
 }

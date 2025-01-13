@@ -7,7 +7,7 @@ interface KartlarinProps {
   priceProps: string;
 }
 
-const popularcard: React.FC<KartlarinProps> = ({ imageProps, contextProps, priceProps }) => {
+const Popularcard: React.FC<KartlarinProps> = ({ imageProps, contextProps, priceProps }) => {
 
  
   return (
@@ -28,4 +28,4 @@ const popularcard: React.FC<KartlarinProps> = ({ imageProps, contextProps, price
   )
 }
 
-export default popularcard
+export default Popularcard

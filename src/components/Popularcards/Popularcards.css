@@ -4,7 +4,10 @@
     font-weight:400;
 }
 .popularcard-container{
-    padding: 0 100px 100px;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .popular-button{
     display: flex;
@@ -21,4 +24,10 @@
    border: none;
    outline: none;
    cursor: pointer;
+}
+.popularcards-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
 }

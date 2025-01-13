@@ -13,15 +13,15 @@ const Benefit: React.FC = () => {
                     Join the club and get the benefits
                     </h1>
 
-                    <h5>
+                    <p>
                     Sign up for our newsletter and receive exclusive offers on new <br/>
                      ranges, sales, pop up stores and more
-                    </h5>
+                    </p>
 
                     <form>
                         <div className="email-container">
-                            <input type="text" placeholder="Enter your email" />
-                            <button className="Sign-up" id="Sign-up">
+                            <input type="text" placeholder="your@email.com" />
+                            <button className="Sign up" id="Sign-up">
                                 Sign-up
                             </button>
                         </div>

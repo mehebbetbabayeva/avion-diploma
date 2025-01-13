@@ -1,5 +1,5 @@
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import "./popularcards.css"
 import Popularcard from './Popularcard'
 import axios from "axios";
@@ -13,7 +13,7 @@ interface Melumat {
   popular_price:string
 }
 
-const popularcards: React.FC = () => {
+const Popularcards: React.FC = () => {
 
 
   const [data, setData] = useState<Melumat[]>([]); 
@@ -35,44 +35,35 @@ const popularcards: React.FC = () => {
   return (
     <div className='popularcard-container'>
       <h3 className='popular-title'>Our popular products</h3>
-      <div className='swiper-container'>
-      <Swiper
-    slidesPerView={3}
-    spaceBetween={30}
-
-    breakpoints={{
-        320: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      }}
-    
-    className="mySwiper"
-  >
-
+      <div className='popularcards-container'>
+ 
 
         {
-          data && data.map(birMelumat => (
-            <SwiperSlide key={birMelumat.id}>
-                 <Popularcard imageProps ={birMelumat.popular_image} contextProps={birMelumat.popular_context} priceProps={birMelumat.popular_price}  />
-              </SwiperSlide>
+          data && data.map((birMelumat,index) => (
+      
+            <div
+              className="popularcard"
+              style={{ width: index === 0 ? "630px" : "300px" }} 
+            >
+              <Popularcard
+                imageProps={birMelumat.popular_image}
+                contextProps={birMelumat.popular_context}
+                priceProps={birMelumat.popular_price}
+              />
+            </div>
+    
           ))
         }
        
       
 
-    </Swiper>
-   <div className='popular-button'><button className="view-collect">View collection</button></div> 
+
+  
       </div>
- 
+      <div className='popular-button'><button className="view-collect">View collection</button></div> 
     </div>
 
   )
 }
 
-export default popularcards
+export default Popularcards
