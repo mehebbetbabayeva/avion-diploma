@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import './Header2.css';
+import { FormattedMessage } from "react-intl";
 
 
 const Header2: React.FC = () => {
@@ -12,7 +13,7 @@ const Header2: React.FC = () => {
   
           <div className="header-comp" >
             <nav className="nav-links d-md-flex header2-links">
-              <Link to="#">About</Link>
+              <Link to="#"><FormattedMessage id="about"/></Link>
               <Link to="#">Products</Link>
               <Link to="#">Shopping</Link>
               <Link to="#">Blog</Link>
