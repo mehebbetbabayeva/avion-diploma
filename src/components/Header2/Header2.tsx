@@ -13,7 +13,7 @@ const Header2: React.FC = () => {
   
           <div className="header-comp" >
             <nav className="nav-links d-md-flex header2-links">
-              <Link to="#"><FormattedMessage id="about"/></Link>
+              <Link to="/about"><FormattedMessage id="about"/></Link>
               <Link to="#">Products</Link>
               <Link to="#">Shopping</Link>
               <Link to="#">Blog</Link>

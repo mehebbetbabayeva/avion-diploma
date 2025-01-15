@@ -22,7 +22,7 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
   const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang.toUpperCase());
     changeLanguage(lang.toLowerCase());
-    setDropdownOpen(false); // Dil seçildikten sonra dropdown menüyü kapat
+    setDropdownOpen(false); 
   };
 
   return (
