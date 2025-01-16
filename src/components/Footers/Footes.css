@@ -77,8 +77,11 @@
    font-weight: 400;
   }
 
-
-  @media (min-width: 320px) and (max-width: 767px) {
+  .alt-footer img{
+    width: 20px;
+    height: 20px;
+   }
+  @media (min-width: 320px) and (max-width: 1000px) {
   
     
     .ust-footer{
@@ -95,10 +98,7 @@
      .alt-footer{
      flex-direction: column;
     }
-    .alt-footer img{
-     width: 20px;
-     height: 20px;
-    }
+  
 .footer{
   padding: 0;
 }

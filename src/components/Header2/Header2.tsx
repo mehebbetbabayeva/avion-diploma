@@ -11,14 +11,12 @@ const Header2: React.FC = () => {
     <>
  
   
-          <div className="header-comp" >
+          <div className="header-comp " >
             <nav className="nav-links d-md-flex header2-links">
+            <Link to="/"><FormattedMessage id="anasehife"/></Link>
               <Link to="/about"><FormattedMessage id="about"/></Link>
-              <Link to="#">Products</Link>
-              <Link to="#">Shopping</Link>
-              <Link to="#">Blog</Link>
-              <Link to="#">Pricing</Link>
-              <Link to="#">Learn</Link>
+              <Link to="/products"><FormattedMessage id="product"/></Link>
+              <Link to="/contact"><FormattedMessage id="contact"/></Link>
             </nav>
           
           </div>

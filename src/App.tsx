@@ -10,6 +10,8 @@ import { IntlProvider } from 'react-intl';
 import az from "../locales/az.json";
 import en from '../locales/en.json';
 import ru from '../locales/ru.json';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
 type Messages = {
     [key: string]: string;
   };
@@ -29,6 +31,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footers/>

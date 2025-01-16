@@ -20,13 +20,7 @@
     font-size: 16px;
     color: #2A254B;
 }
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-  
-    .brandcard-container img{
-      width: 20px;
-      height: 20px;
-    }
-
+.brandcard-container img{
+    width: 20px;
+    height: 20px;
   }
