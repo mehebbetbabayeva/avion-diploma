@@ -1,0 +1,35 @@
+.header-comp .nav-links {
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.header2-links a {
+  color: #726E8D;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header-comp {
+  padding: 0 100px;
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header-comp {
+   display: none;
+  }
+  
+}

@@ -1,10 +1,17 @@
 import React from 'react'
 
+import Header1 from '../components/About/Header/Header1'
+import Header2 from '../components/About/Header2/Header2'
+
+
+
 const About = () => {
   return (
     <div>
-        {/* about komponentleri burada olacaq import burada edilecek  */}
-        about sehifesi
+       <Header1/>
+       <Header2/>
+
+
     </div>
   )
 }
