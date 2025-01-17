@@ -1,0 +1,130 @@
+
+.hyper{
+    margin: 50px 0;
+  }
+  .hyper-left-side{
+    background-color:#2A254B;
+    color: #fff;
+    width: 60%;
+    height: 100%;
+
+  }
+  
+  .hyper h1 {
+    padding: 40px 60px;
+    font-size: 32px;
+  }
+
+  .hyper-left-side .view-collect {
+    background-color:#F9F9F926;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: transparent;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  
+  }
+  
+  .hyper-left-side h5{
+    padding: 60px;
+    font-size: 18px;
+   font-weight: 400;
+  
+  }
+  .hyper-right-side{
+    width: 40%;
+    height: 100%;
+  }
+
+  .hyper-right-side img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  
+  }
+
+  .hyper-container{
+   
+    height: 584px;
+    display: flex;
+
+  }
+
+  @media (min-width: 320px) and (max-width:767px) {
+  
+    .hyper{
+      margin:  0;
+    }
+    .hyper-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .hyper-left-side{
+      flex: none; 
+      width: 100%;
+  
+    
+    }
+
+    .hyper-left-side{
+      background-color:#2A254B;
+      color: #fff;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+   
+    }
+    
+    .hyper h1 {
+    
+      padding: 20px;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 400;
+      margin-top: 50px;
+    }
+  
+    .hyper-left-side .in-touch {
+      background-color:#F9F9F926;
+      color: #fff;
+      padding: 15px 30px;
+      border-color: transparent;
+      margin-top: 20px;
+      margin-left: 6px;
+      margin-bottom: 80px;
+      cursor: pointer;
+    
+    }
+    
+    .hyper-left-side h5{
+      margin: 0;
+      margin-top: 50px;
+      font-size: 15px;
+     font-weight: 400;
+     order: 2;
+     padding: 20px;
+
+    }
+    .hyper-right-side{
+      display: none;
+    }
+  
+
+  
+    .hyper-container{
+     
+      height: 584px;
+      display: flex;
+  
+    }
+    .view-collect{
+      order: 3;
+      margin-top: 200px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }

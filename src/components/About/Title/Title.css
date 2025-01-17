@@ -1,7 +1,55 @@
+/* .Title {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+
 .about-title{
+    display: flex;
+    padding: 50px 0;
+    margin: 10%;
     padding: 50px 0;
     text-align: center;
     color: #2A254B;
     font-size: 36px;
     font-weight: 400;
 }
+
+.view-products {
+    background-color:#F9F9F9;
+    color: #000;
+    padding: 15px 30px;
+    border-color: transparent;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  
+  } */
+
+  .title-container {
+    display: flex; /* Use Flexbox layout */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Horizontally align items */
+    margin: 0 auto; /* Center the container itself */
+    padding: 88px 0; /* Add some spacing */
+    gap: 20px; /* Space between items */
+  }
+  
+  .about-title {
+    color: #2A254B;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  .view-products {
+    background-color: #F9F9F9;
+    color: #000;
+    padding: 15px 30px;
+    margin-left: 288px;
+    border-color: transparent;
+    cursor: pointer;
+  }
