@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Idea.css"
-import armchair from "../../assets/images/idea/armchair.png";
+import armchair from "../../../assets/images/idea/armchair.png"
 
 const Idea = () => {
   return (

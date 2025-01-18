@@ -73,7 +73,7 @@
       background-color:#2A254B;
       color: #fff;
       width: 100%;
-      height: 500px;
+      height:auto;
       display: flex;
       flex-direction: column;
    
@@ -85,24 +85,24 @@
       margin: 0;
       font-size: 32px;
       font-weight: 400;
-      margin-top: 50px;
+     
     }
   
     .hyper-left-side .in-touch {
       background-color:#F9F9F926;
       color: #fff;
-      padding: 15px 30px;
+ 
       border-color: transparent;
       margin-top: 20px;
       margin-left: 6px;
-      margin-bottom: 80px;
+ 
       cursor: pointer;
     
     }
     
     .hyper-left-side h5{
       margin: 0;
-      margin-top: 50px;
+   
       font-size: 15px;
      font-weight: 400;
      order: 2;
@@ -113,11 +113,21 @@
       display: none;
     }
   
-
+    .hyper-left-side .view-collect {
+      background-color:#F9F9F926;
+      color: #fff;
+      padding: 15px 30px;
+      border-color: transparent;
+      margin-top: 20px;
+      margin-left: 0px;
+      margin-bottom: 80px;
+      cursor: pointer;
+    
+    }
   
     .hyper-container{
      
-      height: 584px;
+      height: auto;
       display: flex;
   
     }

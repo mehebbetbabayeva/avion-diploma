@@ -1,13 +1,12 @@
 import React from 'react'
 import './hyper.css'
-import sofa from "../../assets//images/hyper/sofa.png"
+import sofa from "../../../assets/images/hyper/sofa.png"
 
 const hyper = () => {
   return (
     <section className="hyper">
         
                 <div className="hyper-container">
-f
                 <div className="hyper-right-side">
                             <img
                                 src={sofa}
@@ -33,7 +32,7 @@ f
                                London interior design community.
                             </h5>
                            
-                                 <button className="in-touch">Get in touch</button>
+                                 <button className="view-collect">Get in touch</button>
 
                           
                         </div>
