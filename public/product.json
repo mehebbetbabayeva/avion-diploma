@@ -1,0 +1,118 @@
+[
+    {
+        "id":1,
+        "product_image": "../src/assets/images/Productscrads/dandychair.png",
+        "product_context": "The Dandy chair",
+        "product_price": "£250",
+        "product_category": "Furniture",
+        "product_type": "Chairs",
+        "products_brand": "Loly"
+        
+
+    },
+    {
+        "id":2,
+        "product_image": "../src/assets/images/Productscrads/rusticvase.png",
+        "product_context": "Rustic Vase Set",
+        "product_price": "£155",
+        "product_category": "Glass",
+        "product_type": "Vases",
+        "products_brand": "Samino"
+    },
+    {
+        "id":3,
+        "product_image": "../src/assets/images/Productscrads/silkyvase.png",
+        "product_context": "The Silky Vase",
+        "product_price": "£125", 
+        "product_category": "Glass",
+        "product_type": "Vases",
+        "products_brand": "Samino"
+    },
+
+    {
+        "id":4,
+        "product_image": "../src/assets/images/Productscrads/lucylamp.png",
+        "product_context": "The Lucy Lamp",
+        "product_price": "£399",
+        "product_category": "Electrical",
+        "product_type": "Lamps",
+        "products_brand": "Eserno"
+    },
+
+    {  "id":5,
+        "product_image": "../src/assets/images/Productscrads/darklamps.png",
+        "product_context": "Dark lamps set",
+        "product_price": "£250",
+        "product_category": "Electrical",
+        "product_type": "Lamps",
+        "products_brand": "Eserno"
+    },
+   
+    {
+        "id":6,
+        "product_image": "../src/assets/images/Productscrads/whitevase.png",
+        "product_context": "White vase",
+        "product_price": "£250",
+        "product_category": "Glass",
+        "product_type": "Vases",
+        "products_brand": "Samino"
+    },
+    {
+        "id":7,
+        "product_image": "../src/assets/images/Productscrads/smallchair.png",
+        "product_context": "Small chair",
+        "product_price": "£155",
+        "product_category": "Furniture",
+        "product_type": "Chairs",
+        "products_brand": "Loly"
+
+    },
+    {
+        "id":8,
+        "product_image": "../src/assets/images/Productscrads/midchair.png",
+        "product_context": "Mid chair",
+        "product_price": "£125",
+        "product_category": "Furniture",
+        "product_type": "Chairs",
+        "products_brand": "Loly"
+    },
+
+    {
+        "id":9,
+        "product_image": "../src/assets/images/Productscrads/dandychair.png",
+        "product_context": "Dandy Chair",
+        "product_price": "£399",
+        "product_category": "Furniture",
+        "product_type": "Chairs",
+        "products_brand": "Loly"
+    },
+
+    {  "id":10,
+        "product_image": "../src/assets/images/Productscrads/rusticvase.png",
+        "product_context": "Rustic Vase Set",
+        "product_price": "£250",
+        "product_category": "Glass",
+        "product_type": "Vases",
+        "products_brand": "Samino"
+    },
+
+    {
+        "id":11,
+        "product_image": "../src/assets/images/Productscrads/silkyvase.png",
+        "product_context": "The Silky Vase",
+        "product_price": "£399",
+        "product_category": "Glass",
+        "product_type": "Vases",
+        "products_brand": "Samino"
+    },
+
+    {  "id":12,
+        "product_image": "../src/assets/images/Productscrads/lucylamp.png",
+        "product_context": "The Lucy Lamp",
+        "product_price": "£250",
+        "product_category": "Electrical",
+        "product_type": "Lamps",
+        "products_brand": "Eserno"
+    }
+]
+
