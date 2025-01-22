@@ -1,68 +1,138 @@
-
-import "./Productscards.css"
-import Productscard from './Productscard'
+import "./Productscards.css";
+import Productscard from "./Productscard";
 import axios from "axios";
-import { useEffect, useState } from 'react';
-
-
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 interface Melumat {
-  id:number,
-  Products_image:string,
-  Products_context:string,
-  Products_price:string
+  id: number;
+  product_image: string;
+  product_context: string;
+  product_price: string;
+  product_category: string;
+  product_type: string;
+  products_brand: string;
 }
 
 const Productscards: React.FC = () => {
-
-
-  const [data, setData] = useState<Melumat[]>([]); 
+  const [data, setData] = useState<Melumat[]>([]);
+  const [filteredData, setFilteredData] = useState<Melumat[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [types, setTypes] = useState<string[]>([]);
+  const [brands, setBrands] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [selectedType, setSelectedType] = useState<string>("");
+  const [selectedBrand, setSelectedBrand] = useState<string>("");
+  const navigate = useNavigate();
   useEffect(() => {
-    
     const fetchData = async () => {
       try {
-        const response = await axios.get("/Product.json"); 
-        setData(response.data);
-      
+        const response = await axios.get<Melumat[]>("/product.json"); 
+        const products = response.data;
+
+        const uniqueCategories = [
+          ...new Set(products.map((item) => item.product_category)),
+        ];
+        const uniqueTypes = [
+          ...new Set(products.map((item) => item.product_type)),
+        ];
+        const uniqueBrands = [
+          ...new Set(products.map((item) => item.products_brand)),
+        ];
+
+        setData(products);
+        setFilteredData(products);
+        setCategories(uniqueCategories);
+        setTypes(uniqueTypes);
+        setBrands(uniqueBrands);
       } catch (error) {
         console.error("Data fetch error:", error);
-       
       }
     };
 
     fetchData();
   }, []);
-  return (
-    <div className='Productscard-container'>
-      <h3 className='Products-title'>Our Products products</h3>
-      <div className='Productscards-container'>
- 
 
-        {
-          data && data.map((birMelumat) => (
-      
-            <div
-              className="Productscard"
-            
-            >
+  useEffect(() => {
+    let filtered = data;
+
+    if (selectedCategory) {
+      filtered = filtered.filter(
+        (item) => item.product_category === selectedCategory
+      );
+    }
+    if (selectedType) {
+      filtered = filtered.filter((item) => item.product_type === selectedType);
+    }
+    if (selectedBrand) {
+      filtered = filtered.filter(
+        (item) => item.products_brand === selectedBrand
+      );
+    }
+
+    setFilteredData(filtered);
+  }, [selectedCategory, selectedType, selectedBrand, data]);
+
+  return (
+    <div className="Productscard-container">
+      <div className="filter-container">
+        <select
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          value={selectedCategory}
+        >
+          <option value="">Category</option>
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+
+        <select
+          onChange={(e) => setSelectedType(e.target.value)}
+          value={selectedType}
+        >
+          <option value="">Product type</option>
+          {types.map((type) => (
+            <option key={type} value={type}>
+              {type}
+            </option>
+          ))}
+        </select>
+
+        <select
+          onChange={(e) => setSelectedBrand(e.target.value)}
+          value={selectedBrand}
+        >
+          <option value="">Brand</option>
+          {brands.map((brand) => (
+            <option key={brand} value={brand}>
+              {brand}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <h3 className="Products-title">Our Products</h3>
+      <div className="Productscards-container">
+        {filteredData.length > 0 ? (
+          filteredData.map((birMelumat) => (
+            <div className="Productscard" key={birMelumat.id}  onClick={() => navigate(`/products/${birMelumat.id}`)}>
               <Productscard
-                imageProps={birMelumat.Products_image}
-                contextProps={birMelumat.Products_context}
-                priceProps={birMelumat.Products_price}
+                imageProps={birMelumat.product_image}
+                contextProps={birMelumat.product_context}
+                priceProps={birMelumat.product_price}
               />
             </div>
-    
           ))
-        }
-       
-      
-
-
-  
+        ) : (
+          <p>No products found.</p>
+        )}
       </div>
-      <div className='Products-button'><button className="view-collect">View collection</button></div> 
+      <div className="Products-button">
+        <button className="view-collect">View collection</button>
+      </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Productscards
+export default Productscards;

@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "product_image": "../src/assets/images/Productscrads/dandychair.png",
+        "product_image": "../src/assets/images/productscards/dandychair.png",
         "product_context": "The Dandy chair",
         "product_price": "£250",
         "product_category": "Furniture",
@@ -12,7 +12,7 @@
     },
     {
         "id":2,
-        "product_image": "../src/assets/images/Productscrads/rusticvase.png",
+        "product_image": "../src/assets/images/productscards/rusticvase.png",
         "product_context": "Rustic Vase Set",
         "product_price": "£155",
         "product_category": "Glass",
@@ -21,7 +21,7 @@
     },
     {
         "id":3,
-        "product_image": "../src/assets/images/Productscrads/silkyvase.png",
+        "product_image": "../src/assets/images/productscards/silkyvase.png",
         "product_context": "The Silky Vase",
         "product_price": "£125", 
         "product_category": "Glass",
@@ -31,7 +31,7 @@
 
     {
         "id":4,
-        "product_image": "../src/assets/images/Productscrads/lucylamp.png",
+        "product_image": "../src/assets/images/productscards/lucylamp.png",
         "product_context": "The Lucy Lamp",
         "product_price": "£399",
         "product_category": "Electrical",
@@ -40,7 +40,7 @@
     },
 
     {  "id":5,
-        "product_image": "../src/assets/images/Productscrads/darklamps.png",
+        "product_image": "../src/assets/images/productscards/darklamps.png",
         "product_context": "Dark lamps set",
         "product_price": "£250",
         "product_category": "Electrical",
@@ -50,7 +50,7 @@
    
     {
         "id":6,
-        "product_image": "../src/assets/images/Productscrads/whitevase.png",
+        "product_image": "../src/assets/images/productscards/whitevase.png",
         "product_context": "White vase",
         "product_price": "£250",
         "product_category": "Glass",
@@ -59,7 +59,7 @@
     },
     {
         "id":7,
-        "product_image": "../src/assets/images/Productscrads/smallchair.png",
+        "product_image": "../src/assets/images/productscards/smallchair.png",
         "product_context": "Small chair",
         "product_price": "£155",
         "product_category": "Furniture",
@@ -69,7 +69,7 @@
     },
     {
         "id":8,
-        "product_image": "../src/assets/images/Productscrads/midchair.png",
+        "product_image": "../src/assets/images/productscards/smallchair.png",
         "product_context": "Mid chair",
         "product_price": "£125",
         "product_category": "Furniture",
@@ -79,7 +79,7 @@
 
     {
         "id":9,
-        "product_image": "../src/assets/images/Productscrads/dandychair.png",
+        "product_image": "../src/assets/images/productscards/dandychair.png",
         "product_context": "Dandy Chair",
         "product_price": "£399",
         "product_category": "Furniture",
@@ -88,7 +88,7 @@
     },
 
     {  "id":10,
-        "product_image": "../src/assets/images/Productscrads/rusticvase.png",
+        "product_image": "../src/assets/images/productscards/rusticvase.png",
         "product_context": "Rustic Vase Set",
         "product_price": "£250",
         "product_category": "Glass",
@@ -98,7 +98,7 @@
 
     {
         "id":11,
-        "product_image": "../src/assets/images/Productscrads/silkyvase.png",
+        "product_image": "../src/assets/images/productscards/silkyvase.png",
         "product_context": "The Silky Vase",
         "product_price": "£399",
         "product_category": "Glass",
@@ -107,7 +107,7 @@
     },
 
     {  "id":12,
-        "product_image": "../src/assets/images/Productscrads/lucylamp.png",
+        "product_image": "../src/assets/images/productscards/lucylamp.png",
         "product_context": "The Lucy Lamp",
         "product_price": "£250",
         "product_category": "Electrical",

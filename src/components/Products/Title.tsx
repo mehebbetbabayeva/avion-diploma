@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Title.css'
 import frame from "../../../src/assets/images/products/frame.png"
 

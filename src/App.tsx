@@ -12,6 +12,7 @@ import en from '../locales/en.json';
 import ru from '../locales/ru.json';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import ProductDetail from './pages/ProductDetail';
 type Messages = {
     [key: string]: string;
   };
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

@@ -6,7 +6,9 @@ const Products = () => {
   return (
     <div>
       <Title/>
+      
       <Productscards/>
+  
     </div>
   )
 }
