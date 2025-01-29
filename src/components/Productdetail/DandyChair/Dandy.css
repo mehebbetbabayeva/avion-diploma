@@ -1,63 +1,87 @@
+.Dandy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.Dandy-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.Dandy-right-side {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .product-page {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  flex: 1;
+  padding: 40px;
 }
 
 .product-title {
   font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .product-price {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.product-category,
+.product-type,
+.product-brand {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .product-description {
   font-size: 16px;
-  color: #555;
-}
-
-.product-dimensions h3 {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-.quantity-selector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.quantity-selector button {
-  padding: 5px 15px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  background-color: #ddd;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .product-buttons {
-  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-to-cart,
+.save-to-favorites {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .add-to-cart {
-  background-color: #2A254B;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+  background: #141718;
+  color: #fff;
 }
 
 .save-to-favorites {
-  background-color: #F9F9F9;
-  color: #000;
-  padding: 10px 20px;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
+  background: transparent;
+  border: 1px solid #141718;
+  color: #141718;
+}
+
+.save-to-favorites:hover {
+  background: #141718;
+  color: #fff;
 }

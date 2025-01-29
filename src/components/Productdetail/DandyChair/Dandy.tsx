@@ -1,60 +1,46 @@
-import React from 'react'
-import './Dandy.css'
-import dandychair from "../../../assets/images/productcards/dandychair.png"
+import React from "react";
+import "./Dandy.css";
 
-const Dandy = () => {
+interface ProductProps {
+  product: {
+    product_image: string;
+    product_context: string;
+    product_price: string;
+    product_category: string;
+    product_type: string;
+    products_brand: string;
+  };
+}
+
+const Dandy: React.FC<ProductProps> = ({ product }) => {
   return (
     <section className="Dandy">
-
       <div className="Dandy-container">
         <div className="Dandy-right-side">
           <img
-            src={dandychair}
-            alt="Dandy Image"
-            className="w-100 Dandy-image"
+            src={product.product_image}
+            alt="Product Image"
+            className="product-image"
           />
-
         </div>
 
         <div className="product-page">
-          <h1 className="product-title">The Dandy Chair</h1>
-          <p className="product-price">£250</p>
+          <h1 className="product-title">{product.product_context}</h1>
+          <p className="product-price">£{product.product_price}</p>
+          <p className="product-category">Category: {product.product_category}</p>
+          <p className="product-type">Type: {product.product_type}</p>
+          <p className="product-brand">Brand: {product.products_brand}</p>
 
-          <div className="product-description">
-            <p>
-              A timeless design, with premium materials, featuring one of our most
-              popular and iconic pieces. The Dandy chair is perfect for any stylish
-              living space with beech legs and lambskin leather upholstery.
-            </p>
-          </div>
+          <p className="product-description">
+            A timeless design, with premium materials, featuring one of our most
+            popular and iconic pieces. The {product.product_context} is perfect for any stylish
+            living space.
+          </p>
 
-          <div className="product-dimensions">
-            <h3>Dimensions</h3>
-            <p><strong>Height:</strong> 110cm</p>
-            <p><strong>Width:</strong> 75cm</p>
-            <p><strong>Depth:</strong> 50cm</p>
-          </div>
-
-          {/* Quantity Selector */}
-          {/* <div className="quantity-selector">
-        <button onClick={decreaseQuantity}>-</button>
-        <span>{quantity}</span>
-        <button onClick={increaseQuantity}>+</button>
-      </div> */}
-
-          {/* Action Buttons */}
-          <div className="product-buttons">
-            <button className="add-to-cart">Add to Cart</button>
-            <button className="save-to-favorites">Save to Favorites</button>
-          </div>
         </div>
-
-
-
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Dandy
+export default Dandy;

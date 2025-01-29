@@ -21,17 +21,17 @@ const ContactForm: React.FC = () => {
   };
 
   const validateEmail = (email: string) => {
-    return /\S+@\S+\.\S+/.test(email);
+    return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     let newErrors = { name: "", email: "", message: "" };
 
-    if (!formData.name) newErrors.name = "Name is required";
-    if (!formData.email) newErrors.email = "Email is required";
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
     else if (!validateEmail(formData.email)) newErrors.email = "Invalid email format";
-    if (!formData.message) newErrors.message = "Message is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
 
     setErrors(newErrors);
 
@@ -48,39 +48,48 @@ const ContactForm: React.FC = () => {
         <p>Fill up the form and our team will get back to you within 24 hours.</p>
         <div className="contact-info">
           <p>📞 +0123 4567 8910</p>
-          <p>📧 hello@flowbase.com</p>
+          <p>📧 <a href="mailto:hello@flowbase.com">hello@flowbase.com</a></p>
           <p>📍 102 Street 2714 Don</p>
         </div>
       </div>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
+      <form className="contact-form" onSubmit={handleSubmit} noValidate>
+        <div className="input-group">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            className={errors.name ? "input-error" : ""}
+          />
+          {errors.name && <span className="error-message">{errors.name}</span>}
+        </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
+        <div className="input-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            className={errors.email ? "input-error" : ""}
+          />
+          {errors.email && <span className="error-message">{errors.email}</span>}
+        </div>
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-        {errors.message && <span className="error">{errors.message}</span>}
+        <div className="input-group">
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            className={errors.message ? "input-error" : ""}
+          />
+          {errors.message && <span className="error-message">{errors.message}</span>}
+        </div>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" className="send-button">Send Message</button>
       </form>
     </div>
   );
