@@ -40,7 +40,7 @@
     },
 
     {  "id":5,
-        "product_image": "../src/assets/images/productscards/darklamps.png",
+        "product_image": "../src/assets/images/productscards/smallchair.png",
         "product_context": "Dark lamps set",
         "product_price": "£250",
         "product_category": "Electrical",
@@ -69,7 +69,7 @@
     },
     {
         "id":8,
-        "product_image": "../src/assets/images/productscards/smallchair.png",
+        "product_image": "../src/assets/images/productscards/darklamps.png",
         "product_context": "Mid chair",
         "product_price": "£125",
         "product_category": "Furniture",
