@@ -17,6 +17,7 @@ const Header2: React.FC = () => {
               <Link to="/about"><FormattedMessage id="about"/></Link>
               <Link to="/products"><FormattedMessage id="product"/></Link>
               <Link to="/contact"><FormattedMessage id="contact"/></Link>
+              <Link to="/blog"><FormattedMessage id="Blog"/></Link>
             </nav>
           
           </div>
