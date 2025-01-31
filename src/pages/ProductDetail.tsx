@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Dandy from "../components/Productdetail/DandyChair/Dandy";
+import Ceramiccards from "../components/Ceramiccards/Ceramiccards";
+import Brandcards from "../components/Brandcards/Brandcards";
+import Benefit from "../components/Benefit/Benefit";
 
 interface Melumat {
   id: number;
@@ -40,6 +43,9 @@ const ProductDetail = () => {
   return (
     <div>
       <Dandy product={product} />
+      <Ceramiccards/>
+      <Brandcards/>
+      <Benefit/>
     </div>
   );
 };

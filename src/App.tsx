@@ -13,6 +13,8 @@ import ru from '../locales/ru.json';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import ProductDetail from './pages/ProductDetail';
+import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 type Messages = {
     [key: string]: string;
   };
@@ -35,6 +37,10 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+
+
         </Routes>
       </main>
       <Footers/>
