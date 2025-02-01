@@ -3,6 +3,7 @@ import './Benefit.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Swal from 'sweetalert2';
+import { FormattedMessage } from 'react-intl';
 
 const validationSchema = yup.object({
   email: yup
@@ -33,10 +34,13 @@ const Benefit: React.FC = () => {
     <section className="benefit">
       <div className="bene-container">
         <div className="bene-side">
-          <h1>Join the club and get the benefits</h1>
+          <h1>       <FormattedMessage id='benefittitle'/> </h1>
           <p>
-            Sign up for our newsletter and receive exclusive offers on new <br />
-            ranges, sales, pop up stores and more
+          <FormattedMessage id='benefittitle1'/>
+            <br />
+          <FormattedMessage id='benefittitle2'/>
+
+      
           </p>
           <form onSubmit={formik.handleSubmit}>
             <div className="email-container">
@@ -49,7 +53,8 @@ const Benefit: React.FC = () => {
                 onBlur={formik.handleBlur}
               />
               <button type="submit" className="Sign up" id="Sign-up">
-                Sign-up
+              <FormattedMessage id='signup'/>
+
               </button>
             </div>
             {formik.touched.email && formik.errors.email ? (

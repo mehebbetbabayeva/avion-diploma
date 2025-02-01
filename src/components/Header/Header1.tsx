@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './Header1.css';
-import search from "../../assets/images/header/Search.png";
-import basket from "../../assets/images/header/Basket.png";
+
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import MobileMenu from '../Header2/MobileMenu';
 import { IoMdClose } from "react-icons/io";
@@ -37,11 +36,11 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
                 <IoMdClose onClick={handleCloseMenu} style={{ color: "#726E8D" }} />
               )}
             </div>
-            <img className="header-icon" src={search} alt="Search Icon" />
+          
           </div>
           <Link to="/" className="avion">Avion</Link>
           <div className="header-icon-container">
-            <img className="header-icon" src={basket} alt="Basket Icon" />
+         
             <div className="language-selector">
               <button
                 className="language-selected"

@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Title.css"
+import { FormattedMessage } from 'react-intl'
+import { Link } from 'react-router-dom'
 const Title = () => {
   return (
 
@@ -7,10 +9,13 @@ const Title = () => {
 
       <div className="title-container">
 
-        <div className='about-title' >A brand built on the love of craftmanship,<br />
-          quality and outstanding customer service</div>
+        <div className='about-title' >
+          <FormattedMessage id='about1'/>
+          <br />
+          <FormattedMessage id='about2'/>
+          </div>
 
-        <button className="view-products">View our products</button>
+        <Link to="/products" style={{textDecoration:"none"}} className="view-products">    <FormattedMessage id='about3'/></Link>
 
       </div>
 

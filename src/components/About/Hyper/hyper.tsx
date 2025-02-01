@@ -1,6 +1,8 @@
 import React from 'react'
 import './hyper.css'
 import sofa from "../../../assets/images/hyper/sofa.png"
+import { FormattedMessage } from 'react-intl'
+import { Link } from 'react-router-dom'
 
 const hyper = () => {
   return (
@@ -18,21 +20,31 @@ const hyper = () => {
              
                         <div className="hyper-left-side">
                             <h1>
-                            Our service isn’t just personal, it’s actually <br />
-                            hyper personally exquisite
+                            <FormattedMessage id='about7'/>
+                             <br />
+                            <FormattedMessage id='about8'/>
+
+                         
 
                             </h1>
 
                             <h5>
-                            When we started Avion, the idea was simple. Make high quality furniture <br />
-                             affordable and available for the mass market. <br />
+                            <FormattedMessage id='about9'/>
+                           <br />
+                           <FormattedMessage id='about10'/>
+
+                             <br />
+                           <FormattedMessage id='about11'/>
                              
-                               Handmade, and lovingly crafted furniture and homeware is what we live, <br />
-                               breathe and design so our Chelsea boutique become the hotbed for the <br />
-                               London interior design community.
+                               <br />
+                           <FormattedMessage id='about12'/>
+
+                              <br />
+                              <FormattedMessage id='about13'/>
+                              
                             </h5>
                            
-                                 <button className="view-collect">Get in touch</button>
+                                 <Link to="/contact" style={{textDecoration:"none"}} className="view-collect"> <FormattedMessage id='get'/></Link>
 
                           
                         </div>

@@ -1,4 +1,5 @@
 
+import { FormattedMessage } from "react-intl";
 import "../Header/Header1.css"
 
 
@@ -13,12 +14,11 @@ const MobileMenu = () => {
      
    
        <nav>
-         <Link to="#">About</Link>
-         <Link to="#">Products</Link>
-         <Link to="#">Shopping</Link>
-         <Link to="#">Blog</Link>
-         <Link to="#">Pricing</Link>
-         <Link to="#">Learn</Link>
+       <Link to="/"><FormattedMessage id="anasehife"/></Link>
+         <Link to="/about"><FormattedMessage id="about"/></Link>
+         <Link to="/product"><FormattedMessage id="product"/></Link>
+         <Link to="/contact"><FormattedMessage id="contact"/></Link>
+         <Link to="/blog"><FormattedMessage id="Blog"/></Link>
        </nav>
      </div>
 

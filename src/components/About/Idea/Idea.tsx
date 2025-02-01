@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Idea.css"
 import armchair from "../../../assets/images/idea/armchair.png"
+import { FormattedMessage } from 'react-intl'
+import { Link } from 'react-router-dom'
 
 const Idea = () => {
   return (
@@ -10,15 +12,20 @@ const Idea = () => {
              
                         <div className="idea-left-side">
                             <h1>
-                            It started with a small idea
+                              <FormattedMessage id='about4'/>
+                         
                             </h1>
 
                             <h5>
-                            A global brand with local beginnings, our story begain in a <br />
-                             small studio in South London in early 2014
+                            <FormattedMessage id='about5'/>
+
+                             <br />
+                            <FormattedMessage id='about6'/>
+
+                            
                             </h5>
                            
-                                 <button className="view-collect">View collection</button>
+                                 <Link to="/products" style={{textDecoration:"none"}} className="view-collect">    <FormattedMessage id='view'/></Link>
 
                           
                         </div>

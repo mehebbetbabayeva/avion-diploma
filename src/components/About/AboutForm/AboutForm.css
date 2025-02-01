@@ -1,0 +1,93 @@
+.aboutform-container{
+    height: 444px;
+    background-image: url("../../../assets/images/aboutpng.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+
+
+
+.email-container {
+   display: flex;
+
+margin-top: 40px;
+} 
+
+.email-container input {
+  width: 350px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-color: transparent;
+  color: #000;
+  font-size: 11px;
+  outline: none;
+  border-radius:0;
+}
+
+
+.email-container button {
+  display: flex;
+  background-color: #2A254B;
+  color: #fff;
+  padding: 15px 30px;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+}
+.bene-side1{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.bene-side1 h1{
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+}
+.bene-side1 p{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.benefit-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.benefit-icon {
+    color: white;
+    font-size: 20px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit{
+  
+    padding: 40px 10px;
+  }
+  .bene-side h1{
+  text-align: center;
+  }
+  .email-container input {
+    width: 150px;
+  
+  }
+  
+  
+ 
+}

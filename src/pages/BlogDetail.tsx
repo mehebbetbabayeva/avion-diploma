@@ -10,6 +10,7 @@ interface Blog {
     content: string;
     author: string;
     date: string;
+    image:string;
   }
 const BlogDetail = () => {
     const { id } = useParams<{ id: string }>(); 

@@ -2,7 +2,8 @@ import "./Productscards.css";
 import Productscard from "./Productscard";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 interface Melumat {
   id: number;
   product_image: string;
@@ -12,6 +13,7 @@ interface Melumat {
   product_type: string;
   products_brand: string;
 }
+
 
 const Productscards: React.FC = () => {
   const [data, setData] = useState<Melumat[]>([]);
@@ -112,7 +114,7 @@ const Productscards: React.FC = () => {
         </select>
       </div>
 
-      <h3 className="Products-title">Our Products</h3>
+      <h3 className="Products-title"><FormattedMessage id="product1"/></h3>
       <div className="Productscards-container">
         {filteredData.length > 0 ? (
           filteredData.map((birMelumat) => (
@@ -129,7 +131,7 @@ const Productscards: React.FC = () => {
         )}
       </div>
       <div className="Products-button">
-        <button className="view-collect">View collection</button>
+        <Link to="/products" className="view-collect" style={{textDecoration:"none"}}><FormattedMessage id="view"/></Link>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import "./BrandCards.css"
 import Brandcard from './Brandcard';
 import axios from "axios";
 import { useEffect, useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 
 interface Melumat {
@@ -34,7 +35,7 @@ const Brandcards: React.FC = () => {
   }, []);
   return (
     <div className='brandcard-container'>
-      <h3>What makes our brand different</h3>
+      <h3><FormattedMessage id='brandcardtitle'/></h3>
       <div className='swiper-container'>
       <Swiper
     slidesPerView={4}

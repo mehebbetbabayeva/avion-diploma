@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Blog.css";
+import { FormattedMessage } from "react-intl";
 
 
 interface BlogPost {
@@ -25,21 +26,21 @@ const BlogCards: React.FC = () => {
   return (
     <div className="blog-container">
       <div className="blog-title">
-      <h1>Blog</h1>
-      <p>Read our latest articles and tutorials.</p>
+      <h1><FormattedMessage id="Blog"/></h1>
+      <p><FormattedMessage id="Blog1"/></p>
       </div>
      
       <div className="blog-list">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-card">
-            <img className="image">{post.image} </img> 
+            <img className="image" src={post.image} />
             <h2>{post.title}</h2>
             <p className="date">{post.date}</p>
             <p>{post.content}</p>
             <p className="author">By {post.author}</p>
         
             <Link to={`/blog/${post.id}`} className="read-more">
-              Read More →
+            <FormattedMessage id="read"/> →
             </Link>
           </div>
         ))}

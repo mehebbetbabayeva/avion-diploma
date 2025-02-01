@@ -8,6 +8,8 @@ import youtube from "../../assets/images/footerem/youtube.svg";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 const validationSchema = yup.object({
     email: yup
@@ -41,43 +43,43 @@ const Footers: React.FC = () => {
             <div className="ust-footer">
 
                 <div className=" ">
-                    <h5 className="text-uppercase">Menu</h5>
+                    <h5 className="text-uppercase"> <FormattedMessage id='menu'/> </h5>
                     <div className="footer-center-links">
-                        <a href="" className="text-secondary">New arrivals</a>
-                        <a href="" className="text-secondary">Best sellers</a>
-                        <a href="" className="text-secondary">Recently viewed</a>
-                        <a href="" className="text-secondary">Popular this week</a>
-                        <a href="" className="text-secondary">All products</a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer2'/> </a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer3'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer4'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer5'/></a>
+                        <Link  to="/products" className="text-secondary"><FormattedMessage id='footer6'/></Link>
                     </div>
                 </div>
 
                 <div className="">
-                    <h5 className="text-uppercase">Categories</h5>
+                    <h5 className="text-uppercase"><FormattedMessage id='footer7'/></h5>
                     <div className="footer-center-links">
-                        <a href="" className="text-secondary">Crockery</a>
-                        <a href="" className="text-secondary">Furniture</a>
-                        <a href="" className="text-secondary">Homeware</a>
-                        <a href="" className="text-secondary">Plant pots</a>
-                        <a href="" className="text-secondary">Chairs</a>
-                        <a href="" className="text-secondary">Venture</a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer8'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer9'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer10'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer11'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer12'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer13'/></a>
                     </div>
                 </div>
 
                 <div className=" ">
-                    <h5 className="text-uppercase">Our company</h5>
+                    <h5 className="text-uppercase"><FormattedMessage id='footer14'/></h5>
                     <div className="footer-center-links">
-                        <a href="" className="text-secondary">About us</a>
-                        <a href="" className="text-secondary">Vacancies</a>
-                        <a href="" className="text-secondary">Contact us</a>
-                        <a href="" className="text-secondary">Privacy</a>
-                        <a href="" className="text-secondary">Returns policy</a>
+                        <Link  to="/about"  className="text-secondary"><FormattedMessage id='footer15'/></Link>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer16'/></a>
+                        <Link  to="/contact"  className="text-secondary"><FormattedMessage id='footer17'/></Link>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer18'/></a>
+                        <a href="" className="text-secondary"><FormattedMessage id='footer19'/></a>
                     </div>
                 </div>
 
 
 
                 <div className="footer-right">
-                    <h4>Shopify</h4>
+                    <h4><FormattedMessage id='footer20'/></h4>
                     <form onSubmit={formik.handleSubmit}>
                         <div className="email-container">
                             <input type="text"
@@ -86,7 +88,7 @@ const Footers: React.FC = () => {
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur} style={{ color: "white" }} />
                             <button type="submit" className="footer-button" id="Sign-up">
-                                Sign up
+                               <FormattedMessage id='signup'/> 
                             </button>
                         </div>
                     </form>
@@ -101,16 +103,16 @@ const Footers: React.FC = () => {
             <div>
                 <div className="alt-footer">
 
-                    <h2 >Copyright 2022 Avion LTD</h2>
+                    <h2 ><FormattedMessage id='footer21'/></h2>
                     <div className="social-links">
 
 
 
-                        <a href=""><img src={facebook} alt="" /></a>
-                        <a href=""><img src={instagram} alt="" /></a>
-                        <a href=""><img src={twitter} alt="" /></a>
-                        <a href=""><img src={linkedin} alt="" /></a>
-                        <a href=""><img src={youtube} alt="" /></a>
+                        <a href="https://www.facebook.com"><img src={facebook} alt="" /></a>
+                        <a href="https://www.instagram.com"><img src={instagram} alt="" /></a>
+                        <a href="https://www.x.com"><img src={twitter} alt="" /></a>
+                        <a href="https://www.linkedin.com"><img src={linkedin} alt="" /></a>
+                        <a href="https://www.youtube.com"><img src={youtube} alt="" /></a>
                     </div>
 
 

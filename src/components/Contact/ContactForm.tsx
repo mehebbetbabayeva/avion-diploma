@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./ContactForm.css"; // Import the CSS file
+import "./ContactForm.css"; 
+import { FormattedMessage } from "react-intl";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ const ContactForm: React.FC = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // Clear errors on change
+    setErrors({ ...errors, [name]: "" }); 
   };
 
   const validateEmail = (email: string) => {
@@ -26,7 +27,7 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    let newErrors = { name: "", email: "", message: "" };
+    const newErrors = { name: "", email: "", message: "" };
 
     if (!formData.name.trim()) newErrors.name = "Name is required";
     if (!formData.email.trim()) newErrors.email = "Email is required";
@@ -44,8 +45,8 @@ const ContactForm: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="contact-left">
-        <h2>Get a Quote</h2>
-        <p>Fill up the form and our team will get back to you within 24 hours.</p>
+        <h2><FormattedMessage id="contact1"/></h2>
+        <p><FormattedMessage id="contact2"/></p>
         <div className="contact-info">
           <p>📞 +0123 4567 8910</p>
           <p>📧 <a href="mailto:hello@flowbase.com">hello@flowbase.com</a></p>
@@ -89,7 +90,7 @@ const ContactForm: React.FC = () => {
           {errors.message && <span className="error-message">{errors.message}</span>}
         </div>
 
-        <button type="submit" className="send-button">Send Message</button>
+        <button type="submit" className="send-button"><FormattedMessage id="contact3"/></button>
       </form>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Accordion.css"
+import { FormattedMessage } from "react-intl";
 
 interface AccordionItem {
   title: string;
@@ -64,11 +65,11 @@ const Accordion: React.FC = () => {
     <section className="accordion-section text-center py-5">
       <div className="container">
         <h2 className="fs-3 text-white py-md-4 text-center py-5">
-          Grow your interest here
+        <FormattedMessage id='acardiontitle'/>  
         </h2>
 
         <div className="row">
-          {/* Left Column */}
+   
           <div className="col-12 col-md-6">
             <div className="accordion-left">
               {accordionData.slice(0, 3).map((item, index) => (

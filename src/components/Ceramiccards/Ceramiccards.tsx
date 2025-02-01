@@ -4,6 +4,8 @@ import "./Ceramiccards.css"
 import Ceramiccard from './Ceramiccard'
 import axios from "axios";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 
 interface Melumat {
@@ -34,7 +36,7 @@ const Ceramiccards: React.FC = () => {
   }, []);
   return (
     <div className='ceramiccard-container'>
-      <h3 className='ceramic-title'>New ceramics</h3>
+      <h3 className='ceramic-title'><FormattedMessage id='ceramictitle'/></h3>
       <div className='swiper-container'>
       <Swiper
     slidesPerView={3}
@@ -67,7 +69,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
-   <div className='ceramic-button'><button className="view-collect">View collection</button></div> 
+   <Link to="/products" className='ceramic-button' style={{textDecoration:"none"}}><button className="view-collect"><FormattedMessage id='view'/></button></Link> 
       </div>
  
     </div>

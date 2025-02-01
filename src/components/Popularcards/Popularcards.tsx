@@ -4,6 +4,8 @@ import "./popularcards.css"
 import Popularcard from './Popularcard'
 import axios from "axios";
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 
 interface Melumat {
@@ -34,7 +36,7 @@ const Popularcards: React.FC = () => {
   }, []);
   return (
     <div className='popularcard-container'>
-      <h3 className='popular-title'>Our popular products</h3>
+      <h3 className='popular-title'><FormattedMessage id='popularcardtitle'/></h3>
       <div className='popularcards-container'>
  
 
@@ -60,7 +62,7 @@ const Popularcards: React.FC = () => {
 
   
       </div>
-      <div className='popular-button'><button className="view-collect">View collection</button></div> 
+      <Link to="/" className='popular-button'  style={{textDecoration:"none"}}><button className="view-collect"><FormattedMessage id='view'/></button></Link> 
     </div>
 
   )
