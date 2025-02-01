@@ -5,6 +5,7 @@ import "./Blog.css";
 
 interface BlogPost {
   id: number;
+  image: string;
   title: string;
   content: string;
   author: string;
@@ -31,6 +32,7 @@ const BlogCards: React.FC = () => {
       <div className="blog-list">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-card">
+            <img className="image">{post.image} </img> 
             <h2>{post.title}</h2>
             <p className="date">{post.date}</p>
             <p>{post.content}</p>

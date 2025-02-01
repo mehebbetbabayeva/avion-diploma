@@ -1,6 +1,7 @@
 [
     {
       "id": 1,
+      "image": "../src/assets/images/blogposts/sofa1.png",
       "title": "Top Furniture Trends for 2025",
       "content": "Discover the latest trends in furniture design, from sustainable materials to multifunctional pieces...",
       "author": "Emily Johnson",
@@ -8,6 +9,7 @@
     },
     {
       "id": 2,
+      "image": "../src/assets/images/blogposts/sofa2.png",
       "title": "How to Choose the Perfect Sofa for Your Living Room",
       "content": "Finding the right sofa involves considering size, fabric, and comfort. Here’s a guide to help you choose...",
       "author": "David Brown",
@@ -15,6 +17,7 @@
     },
     {
       "id": 3,
+      "image": "../src/assets/images/blogposts/sofa3.png",
       "title": "5 Must-Have Furniture Pieces for a Cozy Home",
       "content": "From ergonomic chairs to elegant coffee tables, these pieces will elevate your living space...",
       "author": "Sophia Martinez",
@@ -22,6 +25,7 @@
     },
     {
       "id": 4,
+      "image":"../src/assets/images/blogposts/table1.png",
       "title": "Sustainable Furniture: A Step Towards a Greener Home",
       "content": "Eco-friendly furniture is on the rise. Learn about sustainable wood, recycled materials, and more...",
       "author": "James Wilson",
@@ -29,6 +33,7 @@
     },
     {
       "id": 5,
+      "image":"../src/assets/images/blogposts/table2.png",
       "title": "How to Maintain and Care for Wooden Furniture",
       "content": "Wooden furniture can last for generations with proper care. Here are some essential maintenance tips...",
       "author": "Olivia Clark",
