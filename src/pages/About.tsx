@@ -9,7 +9,6 @@ import AboutForm from '../components/About/AboutForm/AboutForm'
 
 
 
-
 const About = () => {
   return (
     <div>
