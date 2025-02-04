@@ -7,8 +7,7 @@
     padding: 100px 60px;
     display: flex;
     flex-direction: column;
-   
-    
+      
 }
 .popular-button{
     display: flex;
@@ -43,7 +42,20 @@
 @media (min-width: 320px) and (max-width: 1180px) {
     .popularcards-container{
         flex-direction: column; 
+        padding: 10px;
+      
+
     }
+    .popularcard-container{
+ 
+      padding: 10px;
+    border: 1px solid;
+
+  }
+  form{
+    width: 100%;
+  }
+
     .popularcard:first-child {
         width: 100%; 
         

@@ -14,7 +14,7 @@ const Productscard: React.FC<KartlarinProps> = ({ imageProps, contextProps, pric
     <div className="swiper-slide">
       <div className="card rounded-0">
         <div className="card-body">
-          <img src={imageProps}/>
+          <div className='card-body-image'> <img src={imageProps}/></div> 
           <p className="card-text">{contextProps}</p>
           <p className="card-title">{priceProps}</p>
        

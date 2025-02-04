@@ -15,8 +15,8 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
   const [selectedLanguage, setSelectedLanguage] = useState('AZ');
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleOpenMenu = () => setOpenMenu(!openMenu);
-  const handleCloseMenu = () => setOpenMenu(!openMenu);
+  const handleOpenMenu = () => setOpenMenu(true);
+  const handleCloseMenu = () => setOpenMenu(false);
 
   const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang.toUpperCase());
@@ -36,11 +36,9 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
                 <IoMdClose onClick={handleCloseMenu} style={{ color: "#726E8D" }} />
               )}
             </div>
-          
           </div>
           <Link to="/" className="avion">Avion</Link>
           <div className="header-icon-container">
-         
             <div className="language-selector">
               <button
                 className="language-selected"
@@ -65,7 +63,7 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
           </div>
         </div>
       </div>
-      {openMenu && <MobileMenu />}
+      {openMenu && <MobileMenu closeMenu={handleCloseMenu} />}
     </header>
   );
 };

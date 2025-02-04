@@ -22,3 +22,16 @@
    outline: none;
    cursor: pointer;
 }
+
+
+@media (min-width: 320px) and (max-width:767px){
+    .ceramiccard-container{
+        padding: 10px;
+        border: 1px solid red;
+    }
+    .ceramic-button{
+        border: 1px solid red;
+        margin:0;
+    }
+ 
+}

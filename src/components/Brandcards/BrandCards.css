@@ -24,3 +24,13 @@
     width: 20px;
     height: 20px;
   }
+
+
+@media (min-width: 320px) and (max-width:767px){
+    .brandcard-container{
+       
+       padding:10px;
+    }
+
+
+}

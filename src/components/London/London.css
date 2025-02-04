@@ -63,10 +63,14 @@
     .london-container{
       flex-direction: column;
       height: auto;
+     
+
 
     }
     .london-left-side {
       width: 100%;
+     
+
   }
   .london-right-side{
    width: 100%;
@@ -90,5 +94,12 @@ margin-bottom: 10px;
 
     align-items: center;
   }
+  .london-left-side .get-intouch{
+  width: 100%;
 
+  margin-top: 0;
+  margin-left:0;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
   }

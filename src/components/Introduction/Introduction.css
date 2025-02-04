@@ -55,7 +55,8 @@
   @media (min-width: 320px) and (max-width:767px) {
   
     .introduction{
-      margin:  0;
+      margin:  0px;
+   
     }
     .intro-container {
       flex-direction: column; 
@@ -73,7 +74,7 @@
       background-color:#2A254B;
       color: #fff;
       width: 100%;
-      height: 500px;
+      height: 100%;
       display: flex;
       flex-direction: column;
    
