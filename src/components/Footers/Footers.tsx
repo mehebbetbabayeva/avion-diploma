@@ -2,8 +2,8 @@ import React from 'react'
 import "./Footes.css"
 import facebook from "../../assets/images/footerem/facebook.svg";
 import instagram from "../../assets/images/footerem/instagram.svg";
-import twitter from "../../assets/images/footerem/linkedin.svg";
-import linkedin from "../../assets/images/footerem/twitter.svg";
+import twitter from "../../assets/images/footerem/twitter.svg";
+import linkedin from "../../assets/images/footerem/linkedin.svg";
 import youtube from "../../assets/images/footerem/youtube.svg";
 import { useFormik } from 'formik';
 import * as yup from 'yup';

@@ -40,12 +40,12 @@
     },
 
     {  "id":5,
-        "product_image": "../src/assets/images/productscards/smallchair.png",
-        "product_context": "Dark lamps set",
-        "product_price": "£250",
-        "product_category": "Electrical",
-        "product_type": "Lamps",
-        "products_brand": "Eserno"
+    "product_image": "../src/assets/images/popularcard/dandychair2.png",
+    "product_context": "Sandy chair",
+    "product_price": "£155",
+    "product_category": "Furniture",
+    "product_type": "Chairs",
+    "products_brand": "Loly"
     },
    
     {
@@ -72,14 +72,14 @@
         "product_image": "../src/assets/images/productscards/darklamps.png",
         "product_context": "Mid chair",
         "product_price": "£125",
-        "product_category": "Furniture",
-        "product_type": "Chairs",
-        "products_brand": "Loly"
+        "product_category": "Electrical",
+        "product_type": "Lamps",
+        "products_brand": "Eserno"
     },
 
     {
         "id":9,
-        "product_image": "../src/assets/images/productscards/dandychair.png",
+        "product_image": "../src/assets/images/productscards/midchair.png",
         "product_context": "Dandy Chair",
         "product_price": "£399",
         "product_category": "Furniture",
@@ -88,8 +88,8 @@
     },
 
     {  "id":10,
-        "product_image": "../src/assets/images/productscards/rusticvase.png",
-        "product_context": "Rustic Vase Set",
+        "product_image": "../src/assets/images/productscards/mohsenvase.png",
+        "product_context": "Mohsen Vase Set",
         "product_price": "£250",
         "product_category": "Glass",
         "product_type": "Vases",
@@ -98,16 +98,16 @@
 
     {
         "id":11,
-        "product_image": "../src/assets/images/productscards/silkyvase.png",
-        "product_context": "The Silky Vase",
+        "product_image": "../src/assets/images/productscards/larylamp.png",
+        "product_context": "The Lary Lamp",
         "product_price": "£399",
-        "product_category": "Glass",
-        "product_type": "Vases",
-        "products_brand": "Samino"
+        "product_category": "Electrical",
+        "product_type": "Lamps",
+        "products_brand": "Eserno"
     },
 
     {  "id":12,
-        "product_image": "../src/assets/images/productscards/lucylamp.png",
+        "product_image": "../src/assets/images/productscards/monylamp.png",
         "product_context": "The Lucy Lamp",
         "product_price": "£250",
         "product_category": "Electrical",
