@@ -26,7 +26,7 @@ const Dandy: React.FC<ProductProps> = ({ product }) => {
 
         <div className="product-page">
           <h1 className="product-title">{product.product_context}</h1>
-          <p className="product-price">£{product.product_price}</p>
+          <p className="product-price">{product.product_price}</p>
           <p className="product-category">Category: {product.product_category}</p>
           <p className="product-type">Type: {product.product_type}</p>
           <p className="product-brand">Brand: {product.products_brand}</p>
