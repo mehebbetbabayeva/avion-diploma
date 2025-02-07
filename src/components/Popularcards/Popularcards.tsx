@@ -62,7 +62,7 @@ const Popularcards: React.FC = () => {
 
   
       </div>
-      <Link to="/" className='popular-button'  style={{textDecoration:"none"}}><button className="view-collect"><FormattedMessage id='view'/></button></Link> 
+      <Link to="/" className='popular-button'  style={{textDecoration:"none"}}><button className="view-collectt"><FormattedMessage id='view'/></button></Link> 
     </div>
 
   )

@@ -69,7 +69,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
-   <Link to="/products" className='ceramic-button' style={{textDecoration:"none"}}><button className="view-collect"><FormattedMessage id='view'/></button></Link> 
+   <Link to="/products" className='ceramic-button' style={{textDecoration:"none"}}><button className="view-collectt"><FormattedMessage id='view'/></button></Link> 
       </div>
  
     </div>

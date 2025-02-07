@@ -5,6 +5,9 @@ import './Header1.css';
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import MobileMenu from '../Header2/MobileMenu';
 import { IoMdClose } from "react-icons/io";
+import { FiShoppingCart } from "react-icons/fi"; 
+import { useSelector } from "react-redux";
+import { RootState } from "../../../redux/store";
 
 interface Header1Props {
   changeLanguage: (lang: string) => void;
@@ -12,7 +15,7 @@ interface Header1Props {
 
 const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('AZ');
+  const [selectedLanguage, setSelectedLanguage] = useState('EN');
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleOpenMenu = () => setOpenMenu(true);
@@ -23,6 +26,8 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
     changeLanguage(lang.toLowerCase());
     setDropdownOpen(false); 
   };
+
+  const itemCount = useSelector((state: RootState) => state.cart.items.length);
 
   return (
     <header>
@@ -60,6 +65,13 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
                 </div>
               )}
             </div>
+
+       
+            <Link to="/cart" className="basket-icon">
+              <FiShoppingCart size={24} style={{ color: "#726E8D" }} />
+              {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
+            </Link>
+
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,37 +15,56 @@ import Contact from './pages/Contact';
 import ProductDetail from './pages/ProductDetail';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+import Cart from './pages/Cart';
+
 type Messages = {
     [key: string]: string;
-  };
-  const messages: Record<string, Messages> = { az, en, ru };
+};
+
+const messages: Record<string, Messages> = { az, en, ru };
 
 const App = () => {
-    const [locale, setLocale] = useState('az');
+ 
+    const [locale, setLocale] = useState(() => {
+        return localStorage.getItem('language') || 'en';
+    });
+
+
     const changeLanguage = (lang: string) => {
-      setLocale(lang);
+        setLocale(lang);
+        localStorage.setItem('language', lang);
     };
-  
-  return (
-    <IntlProvider locale={locale} messages={messages[locale]}>
-      <Header1 changeLanguage={changeLanguage} />
-      <Header2/>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogDetail />} />
 
 
-        </Routes>
-      </main>
-      <Footers/>
-      </IntlProvider>
-  );
+    const [currentMessages, setCurrentMessages] = useState(messages[locale]);
+
+    useEffect(() => {
+        setCurrentMessages(messages[locale]); 
+    }, [locale]);
+
+    return (
+        <Provider store={store}>
+            <IntlProvider locale={locale} messages={currentMessages} defaultLocale="en">
+                <Header1 changeLanguage={changeLanguage} />
+                <Header2 />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/products" element={<Products />} />
+                        <Route path="/products/:id" element={<ProductDetail />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/blog" element={<Blog />} />
+                        <Route path="/blog/:id" element={<BlogDetail />} />
+                        <Route path="/cart" element={<Cart />} />
+                    </Routes>
+                </main>
+                <Footers />
+            </IntlProvider>
+        </Provider>
+    );
 };
 
 export default App;

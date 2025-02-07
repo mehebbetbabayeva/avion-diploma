@@ -42,7 +42,7 @@ const Benefit: React.FC = () => {
 
       
           </p>
-          <form onSubmit={formik.handleSubmit}>
+          <form className='benefit-form' onSubmit={formik.handleSubmit}>
             <div className="email-container">
               <input
                 type="text"

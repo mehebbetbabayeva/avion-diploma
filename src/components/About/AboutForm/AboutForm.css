@@ -75,6 +75,11 @@ margin-top: 40px;
     color: white;
     font-size: 20px;
 }
+.benefit-form{
+  
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .benefit{
   
@@ -87,7 +92,20 @@ margin-top: 40px;
     width: 150px;
   
   }
+  .benefit-list{
   
+    margin: 0;
+
+ 
+  }
+  .benefit-list span{
+    font-size: 14px;
+  }
+  .aboutform-container{
+    height: auto;
+    padding: 0 10px ;
   
+ 
+}
  
 }

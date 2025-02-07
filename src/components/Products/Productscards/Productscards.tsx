@@ -2,10 +2,10 @@ import "./Productscards.css";
 import Productscard from "./Productscard";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 interface Melumat {
-  id: number;
+  id: string;
   product_image: string;
   product_context: string;
   product_price: string;
@@ -24,7 +24,7 @@ const Productscards: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedType, setSelectedType] = useState<string>("");
   const [selectedBrand, setSelectedBrand] = useState<string>("");
-  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -118,11 +118,12 @@ const Productscards: React.FC = () => {
       <div className="Productscards-container">
         {filteredData.length > 0 ? (
           filteredData.map((birMelumat) => (
-            <div className="Productscard" key={birMelumat.id}  onClick={() => navigate(`/products/${birMelumat.id}`)}>
+            <div className="Productscard" key={birMelumat.id}  >
               <Productscard
                 imageProps={birMelumat.product_image}
                 contextProps={birMelumat.product_context}
                 priceProps={birMelumat.product_price}
+                idProps={birMelumat.id}
               />
             </div>
           ))
@@ -130,9 +131,8 @@ const Productscards: React.FC = () => {
           <p>No products found.</p>
         )}
       </div>
-      <div className="Products-button">
-        <Link to="/products" className="view-collect" style={{textDecoration:"none"}}><FormattedMessage id="view"/></Link>
-      </div>
+      <Link to="/products" className='popular-button'  style={{textDecoration:"none"}}><button className="view-collectt"><FormattedMessage id='view'/></button></Link> 
+
     </div>
   );
 };

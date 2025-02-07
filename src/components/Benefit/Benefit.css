@@ -8,7 +8,11 @@
     flex-direction: column; 
     align-items: center; 
   }
-
+.benefit-form{
+  
+  display: flex;
+  justify-content: center;
+}
   .bene-side {
     flex: none; 
     width: 100%;

@@ -23,14 +23,22 @@
    cursor: pointer;
 }
 
+.view-collectt{
+    background-color:#F9F9F926;
+    color: #fff;
+    padding: 15px 30px;
+    border-color: transparent;
+    
+    cursor: pointer;
+}
 
 @media (min-width: 320px) and (max-width:767px){
     .ceramiccard-container{
         padding: 10px;
-        border: 1px solid red;
+  
     }
     .ceramic-button{
-        border: 1px solid red;
+     
         margin:0;
     }
  

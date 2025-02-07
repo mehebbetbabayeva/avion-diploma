@@ -16,7 +16,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ closeMenu }) => {
         <Link to="/about" onClick={closeMenu}>
           <FormattedMessage id="about" />
         </Link>
-        <Link to="/product" onClick={closeMenu}>
+        <Link to="/products" onClick={closeMenu}>
           <FormattedMessage id="product" />
         </Link>
         <Link to="/contact" onClick={closeMenu}>

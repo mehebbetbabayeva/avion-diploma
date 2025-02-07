@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Swal from 'sweetalert2';
 import { FormattedMessage } from 'react-intl';
-import { FaCheckCircle } from "react-icons/fa"; // Check icon əlavə edildi
+import { FaCheckCircle } from "react-icons/fa"; 
 
 const validationSchema = yup.object({
     email: yup
@@ -57,7 +57,7 @@ const AboutForm = () => {
             </div>
           </div>
 
-          <form onSubmit={formik.handleSubmit}>
+          <form className="benefit-form" onSubmit={formik.handleSubmit}>
             <div className="email-container">
               <input
                 type="text"
