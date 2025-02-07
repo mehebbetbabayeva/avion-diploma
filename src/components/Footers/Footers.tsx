@@ -80,14 +80,14 @@ const Footers: React.FC = () => {
 
                 <div className="footer-right">
                     <h4><FormattedMessage id='footer20'/></h4>
-                    <form onSubmit={formik.handleSubmit}>
+                    <form className="footer-form" onSubmit={formik.handleSubmit}>
                         <div className="email-container">
                             <input type="text"
                                 name="email" placeholder="your@email.com"
                                 value={formik.values.email}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur} style={{ color: "white" }} />
-                            <button type="submit" className="footer-button" id="Sign-up">
+                            <button type="submit" className="footer-button" >
                                <FormattedMessage id='signup'/> 
                             </button>
                         </div>

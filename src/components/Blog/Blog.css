@@ -165,6 +165,7 @@
 
   .image {
     height: 200px;
+    object-fit: cover;
   }
 
   .image-detail {

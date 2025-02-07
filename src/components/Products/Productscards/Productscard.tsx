@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"; 
+import { FormattedMessage } from "react-intl";
 
 interface KartlarinProps {
   imageProps: string;
@@ -53,12 +54,12 @@ const Productscard: React.FC<KartlarinProps> = ({ imageProps, contextProps, pric
 
   
           <button className="add-to-cart-btn" onClick={handleAddToCart}>
-            <FiShoppingCart size={20} /> Səbətə əlavə et
+            <FiShoppingCart size={20} />         <FormattedMessage id="sebeteelave"/> 
           </button>
 
   
           <button className="view-product-btn" onClick={() => navigate(`/products/${idProps}`)}>
-            <FiEye size={20} /> Məhsula Bax
+            <FiEye size={20} />          <FormattedMessage id="mehsulabax"/> 
           </button>
         </div>
       </div>

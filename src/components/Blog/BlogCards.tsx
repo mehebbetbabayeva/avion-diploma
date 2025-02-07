@@ -33,7 +33,7 @@ const BlogCards: React.FC = () => {
       <div className="blog-list">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-card">
-            <img className="image" src={post.image} />
+           <div className="blog-image"> <img className="image" src={post.image} /></div>
             <h2>{post.title}</h2>
             <p className="date">{post.date}</p>
             <p>{post.content}</p>

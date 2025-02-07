@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../redux/store";
 import { increaseQuantity, decreaseQuantity, removeFromCart, clearCart } from "../../../redux/cartSlice";
 import "./Cart.css";
+import { FormattedMessage } from "react-intl";
 
 const CartComponent: React.FC = () => {
   const dispatch = useDispatch();
@@ -10,10 +11,10 @@ const CartComponent: React.FC = () => {
 
   return (
     <div className="cart-container">
-      <h1>Səbət</h1>
+      <h1><FormattedMessage id="sebet"/></h1>
 
       {items.length === 0 ? (
-        <p>Səbət boşdur.</p>
+        <p><FormattedMessage id="sebetbosdur"/></p>
       ) : (
         <>
           <div className="cart-items">
@@ -22,14 +23,14 @@ const CartComponent: React.FC = () => {
                 <img src={item.image} alt={item.name} className="cart-item-image" />
                 <div className="cart-item-details">
                   <h2>{item.name}</h2>
-                  <p>Qiymət: £{item.price.toFixed(2)}</p>
+                  <p><FormattedMessage id="qiymet"/>: £{item.price.toFixed(2)}</p>
                   <div className="quantity-controls">
                     <button onClick={() => dispatch(decreaseQuantity(item.id))}>-</button>
                     <span>{item.quantity}</span>
                     <button onClick={() => dispatch(increaseQuantity(item.id))}>+</button>
                   </div>
                   <button className="remove-btn" onClick={() => dispatch(removeFromCart(item.id))} >
-                    Sil
+                  <FormattedMessage id="sil"/> 
                   </button>
                 </div>
               </div>
@@ -37,9 +38,9 @@ const CartComponent: React.FC = () => {
           </div>
 
           <div className="cart-total">
-            <h2>Ümumi məbləğ: £{totalAmount.toFixed(2)}</h2>
+            <h2>     <FormattedMessage id="umumimebleg"/> : £{totalAmount.toFixed(2)}</h2>
             <button className="clear-cart-btn" onClick={() => dispatch(clearCart())}>
-              Səbəti Təmizlə
+            <FormattedMessage id="sebetitemizle"/>  
             </button>
           </div>
         </>

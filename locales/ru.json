@@ -69,5 +69,13 @@
         "footer21": "© 2022 Avion LTD Все права защищены",
         "exclusiveOffers": "Эксклюзивные предложения",
         "freeEvents": "Бесплатные мероприятия",
-        "largeDiscounts": "Большие скидки"
+        "largeDiscounts": "Большие скидки",
+        "sebet": "Корзина",
+        "sebetbosdur": "Корзина пуста.",
+        "qiymet": "Цена",
+        "sil": "Удалить",
+        "umumimebleg": "Общая сумма",
+        "sebetitemizle": "Очистить корзину",
+        "sebeteelave": "Добавить в корзину",
+        "mehsulabax": "Посмотреть продукт"
 }
