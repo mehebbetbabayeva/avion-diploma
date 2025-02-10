@@ -46,7 +46,7 @@
 
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 1180px) {
+@media (min-width: 320px) and (max-width: 700px) {
     .popularcards-container{
         flex-direction: column; 
         padding: 10px;
