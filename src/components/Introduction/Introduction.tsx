@@ -16,7 +16,7 @@ const Introduction: React.FC = () => {
                           <FormattedMessage id='thefuture'/>   <br />   <FormattedMessage id='thefuture2'/>  
                             </h1>
                            
-                                 <Link to="/products" className="view-collect" style={{textDecoration:"none"}}><FormattedMessage id='view'/></Link>
+                                 <Link to="/products" className="view-collect view-center" style={{textDecoration:"none"}}><FormattedMessage id='view'/></Link>
 
                             <h5>
                             <FormattedMessage id='introtext1'/>  

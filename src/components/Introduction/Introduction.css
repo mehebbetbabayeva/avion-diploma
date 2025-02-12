@@ -69,7 +69,9 @@
   
     
     }
-
+.view-center{
+  text-align: center;
+}
     .intro-left-side{
       background-color:#2A254B;
       color: #fff;

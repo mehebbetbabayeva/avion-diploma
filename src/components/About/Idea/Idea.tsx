@@ -25,7 +25,7 @@ const Idea = () => {
                             
                             </h5>
                            
-                                 <Link to="/products" style={{textDecoration:"none"}} className="view-collect">    <FormattedMessage id='view'/></Link>
+                                 <Link to="/products" style={{textDecoration:"none"}} className="view-collect view-center">    <FormattedMessage id='view'/></Link>
 
                           
                         </div>

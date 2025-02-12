@@ -15,8 +15,8 @@ const Title = () => {
           <FormattedMessage id='about2'/>
           </div>
 
-        <Link to="/products" style={{textDecoration:"none"}} className="view-products">    <FormattedMessage id='about3'/></Link>
-
+   <Link to="/products" style={{textDecoration:"none"}} className="view-products ">    <FormattedMessage id='about3'/></Link>
+      
       </div>
 
 

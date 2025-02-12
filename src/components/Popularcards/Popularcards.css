@@ -77,3 +77,29 @@
         object-fit: fill;
       }
   }
+  @media (min-width: 700px) and (max-width: 1000px) {
+   
+    .popularcard-container{
+ 
+      padding: 10px;
+  
+
+  }
+  form{
+    width: 100%;
+  }
+
+    .popularcard:first-child {
+        width: 50%; 
+        
+      }
+      .popularcard {
+        width: 50%; 
+
+      }
+      img{
+        width: 100%;
+        height: 250px;
+        object-fit: fill;
+      }
+  }
