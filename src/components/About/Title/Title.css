@@ -1,34 +1,4 @@
-/* .Title {
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    
-  }
 
-
-.about-title{
-    display: flex;
-    padding: 50px 0;
-    margin: 10%;
-    padding: 50px 0;
-    text-align: center;
-    color: #2A254B;
-    font-size: 36px;
-    font-weight: 400;
-}
-
-.view-products {
-    background-color:#F9F9F9;
-    color: #000;
-    padding: 15px 30px;
-    border-color: transparent;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-bottom: 80px;
-    cursor: pointer;
-  
-  } */
 
   .title-container {
     display: flex; /* Use Flexbox layout */
@@ -49,11 +19,16 @@
     background-color: #F9F9F9;
     color: #000;
     padding: 15px 30px;
-
+    border-radius: 8px;
     border-color: transparent;
     cursor: pointer;
   }
-
+.view-products:hover{
+  background: linear-gradient(90deg, #2A254B, #2A254B);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(218, 217, 221, 0.7);
+  border-radius: 8px;
+}
   @media (min-width: 320px) and (max-width:767px) {
     .title-container {
       flex-direction: column;

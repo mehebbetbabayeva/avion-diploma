@@ -5,7 +5,7 @@ import Brandcard from './Brandcard';
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
-
+import { Autoplay } from "swiper/modules";
 
 interface Melumat {
   id:number,
@@ -40,7 +40,10 @@ const Brandcards: React.FC = () => {
       <Swiper
     slidesPerView={4}
     spaceBetween={30}
-
+    speed={3000} 
+    loop={true}
+    autoplay={{ disableOnInteraction: true }} 
+    modules={[Autoplay]}
     breakpoints={{
         320: {
           slidesPerView: 1,

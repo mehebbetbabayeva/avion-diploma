@@ -20,6 +20,35 @@
 }
 
 
+.header2-links a {
+  color: #726E8D;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header2-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #2A254B, #2A254B);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.header2-links a:hover::after {
+  width: 100%;
+}
+
+.header2-links a:hover {
+  color: #2A254B;
+  transform: scale(1.1);
+}
 
 
 

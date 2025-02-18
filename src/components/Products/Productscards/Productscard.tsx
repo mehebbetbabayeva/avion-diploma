@@ -38,6 +38,7 @@ const Productscard: React.FC<KartlarinProps> = ({ imageProps, contextProps, pric
       confirmButtonText: "OK",
       timer: 2000,
       showConfirmButton: false, 
+      
     });
   };
 

@@ -44,7 +44,7 @@ const hyper = () => {
                               
                             </h5>
                            
-                                 <Link to="/contact" style={{textDecoration:"none"}} className="view-collect view-center"> <FormattedMessage id='get'/></Link>
+                                 <Link to="/contact" style={{textDecoration:"none"}} className="view-collect"> <FormattedMessage id='get'/></Link>
 
                           
                         </div>

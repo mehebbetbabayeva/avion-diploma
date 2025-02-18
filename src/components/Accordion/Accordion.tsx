@@ -64,7 +64,7 @@ const Accordion: React.FC = () => {
   return (
     <section className="accordion-section text-center py-5">
       <div className="container">
-        <h2 className="fs-3 text-white py-md-4 text-center py-5">
+        <h2 className="fs-3 text-white py-md-4 text-center py-5" style={{textAlign:"center"}}>
         <FormattedMessage id='acardiontitle'/>  
         </h2>
 
@@ -89,7 +89,7 @@ const Accordion: React.FC = () => {
                     }`}
                   >
                     <p className="ac-text">{item.content}</p>
-                    <a href={item.linkHref}>{item.linkText}</a>
+                    <a href={item.linkHref} style={{paddingBottom:"30px"}}>{item.linkText}</a>
                   </div>
                 </div>
               ))}
@@ -114,9 +114,10 @@ const Accordion: React.FC = () => {
                     className={`ac-panel ${
                       activeIndex === index + 3 ? "d-block" : "d-none"
                     }`}
+                    
                   >
                     <p className="ac-text">{item.content}</p>
-                    <a href={item.linkHref}>{item.linkText}</a>
+                    <a href={item.linkHref} style={{paddingBottom:"30px"}}>{item.linkText}</a>
                   </div>
                 </div>
               ))}

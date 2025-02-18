@@ -2,7 +2,7 @@
 .accordion-section {
   background: linear-gradient(135deg, #4a90e2, #50e3c2);
   color: #fff;
-  padding: 60px 20px;
+  padding: 60px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .ac-panel {
-  background: #ccc;
+  background: white;
   color: #333;
   max-height: 0;
   overflow: hidden;

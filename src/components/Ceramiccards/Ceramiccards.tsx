@@ -36,7 +36,7 @@ const Ceramiccards: React.FC = () => {
   }, []);
   return (
     <div className='ceramiccard-container'>
-      <h3 className='ceramic-title'><FormattedMessage id='ceramictitle'/></h3>
+      <h3 className='ceramic-title' style={{textAlign:"center"}}><FormattedMessage id='ceramictitle'/></h3>
       <div className='swiper-container'>
       <Swiper
     slidesPerView={3}

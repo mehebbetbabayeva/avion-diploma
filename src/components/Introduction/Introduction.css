@@ -1,6 +1,6 @@
 
   .introduction{
-    margin: 50px 0;
+    padding: 100px 0 0;
   }
   .intro-left-side{
     background-color:#2A254B;
@@ -24,9 +24,17 @@
     margin-left: 60px;
     margin-bottom: 80px;
     cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
   
   }
-  
+  .view-collect:hover {
+    background: linear-gradient(90deg, #2A254B, #2A254B);
+    border-color: #ff416c;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(218, 217, 221, 0.7);
+    transform: scale(1.1);
+}
   .intro-left-side h5{
     padding: 60px;
     font-size: 18px;

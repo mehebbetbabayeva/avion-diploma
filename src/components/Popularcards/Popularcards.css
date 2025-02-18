@@ -1,12 +1,14 @@
 .popular-title{
     color: #2A254B;
-    font-size: 32px;
+    font-size: 40px;
     font-weight:400;
+    text-align: center;
 }
 .popularcard-container{
-    padding: 100px 60px;
+    padding: 0px 60px 100px;
     display: flex;
     flex-direction: column;
+
       
 }
 .popular-button{
@@ -52,6 +54,9 @@
         padding: 10px;
       
 
+    }
+    .popular-title{
+      font-size: 20px;
     }
     .popularcard-container{
  

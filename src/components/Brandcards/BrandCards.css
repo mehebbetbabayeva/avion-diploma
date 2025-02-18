@@ -1,12 +1,12 @@
 .brandcard-container{
-    padding: 0 60px 60px;
+    padding: 100px 60px;
 }
 .brandcard-container .swiper-container{
    padding-top: 30px;
 }
 .brandcard-container h3{
    text-align: center;
-   font-size: 24px;
+   font-size: 40px;
    font-weight: 400;
    color: #2A254B;
 }
@@ -31,6 +31,10 @@
        
        padding:10px;
     }
-
+    .brandcard-container h3{
+      
+        font-size: 30px;
+      
+     }
 
 }

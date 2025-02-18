@@ -1,10 +1,11 @@
 .Products-title{
     color: #2A254B;
-    font-size: 32px;
+    font-size: 40px;
     font-weight:400;
+    text-align: center;
 }
 .Productscard-container{
-    padding:  60px;
+    padding: 100px  60px;
     display: flex;
     flex-direction: column;
 
@@ -31,6 +32,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 100px;
 }
 .Productscard {
     width: 300px;
@@ -50,7 +52,7 @@
   .filter-container{
     display: flex;
     align-items: center;
-    
+    padding:0 0 50px ;
     gap: 30px;
   }
   .filter-container select{
@@ -113,7 +115,10 @@
         padding: 10px;
 
     }
-
+    .Productscards-container{
+     
+      padding-bottom: 20px;
+  }
      
       img{
         width: 100%;

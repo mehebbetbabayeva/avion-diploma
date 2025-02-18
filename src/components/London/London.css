@@ -54,16 +54,24 @@
    
     height: 584px;
     display: flex;
-
+    padding: 100px 0;
   }
+.get-intouch:hover{
 
+    background: linear-gradient(90deg, #2A254B, #2A254B);
+   
+    color: #fff;
+    box-shadow: 0 0 20px rgba(218, 217, 221, 0.7);
+    border-radius: 8px;
+
+}
   @media (min-width: 320px) and (max-width: 767px) {
    
     
     .london-container{
       flex-direction: column;
       height: auto;
-     
+     padding: 20px 0;
 
 
     }

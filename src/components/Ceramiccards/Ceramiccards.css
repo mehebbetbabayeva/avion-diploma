@@ -1,10 +1,11 @@
 .ceramic-title{
     color: #2A254B;
-    font-size: 32px;
+    font-size: 40px;
     font-weight:400;
 }
 .ceramiccard-container{
-    padding: 0 60px ;
+    padding: 0px 60px  ;
+ 
   
 }
 .ceramic-button{
@@ -29,10 +30,16 @@
     color: #fff;
     padding: 15px 30px;
     border-color: transparent;
-    
+    border-radius: 8px;
     cursor: pointer;
 }
-
+.view-collectt:hover{
+    background: linear-gradient(90deg, #2A254B, #2A254B);
+   
+    color: #fff;
+    box-shadow: 0 0 20px rgba(218, 217, 221, 0.7);
+    border-radius: 8px;
+}
 @media (min-width: 320px) and (max-width:767px){
     .ceramiccard-container{
         padding: 10px;
@@ -42,5 +49,7 @@
      
         margin:0;
     }
- 
+ .ceramic-title{
+    font-size: 20px;
+ }
 }

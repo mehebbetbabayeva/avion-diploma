@@ -114,7 +114,7 @@ const Productscards: React.FC = () => {
         </select>
       </div>
 
-      <h3 className="Products-title"><FormattedMessage id="product1"/></h3>
+    
       <div className="Productscards-container">
         {filteredData.length > 0 ? (
           filteredData.map((birMelumat) => (
