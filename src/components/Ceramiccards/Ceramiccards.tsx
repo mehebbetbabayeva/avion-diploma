@@ -52,7 +52,7 @@ const Ceramiccards: React.FC = () => {
           slidesPerView={3}
           spaceBetween={30}
           breakpoints={{
-            320: { slidesPerView: 1 },
+            0: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}
@@ -60,7 +60,7 @@ const Ceramiccards: React.FC = () => {
         >
           {
             data && data.map((birMelumat, index) => (
-              <SwiperSlide key={birMelumat.id}  data-aos-delay={index * 200}>
+              <SwiperSlide key={birMelumat.id}  >
                 <Ceramiccard
                   imageProps={birMelumat.ceramic_image}
                   contextProps={birMelumat.ceramic_context}

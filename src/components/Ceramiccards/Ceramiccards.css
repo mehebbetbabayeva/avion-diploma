@@ -8,6 +8,17 @@
  
   
 }
+.card-body div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.card-body div{
+    width: 100%;
+    height: 200px;
+  
+}
 .ceramic-button{
     display: flex;
     justify-content: center;

@@ -15,7 +15,10 @@ interface Header1Props {
 
 const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('EN');
+  const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    return localStorage.getItem('language')?.toUpperCase() || 'EN';
+});
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleOpenMenu = () => setOpenMenu(true);

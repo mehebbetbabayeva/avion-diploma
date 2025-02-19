@@ -26,19 +26,15 @@ type Messages = {
 const messages: Record<string, Messages> = { az, en, ru };
 
 const App = () => {
- 
-    const [locale, setLocale] = useState(() => {
-        return localStorage.getItem('language') || 'en';
-    });
-
+  
+    const storedLang = localStorage.getItem('language') || 'en';
+    const [locale, setLocale] = useState(storedLang);
+    const [currentMessages, setCurrentMessages] = useState(messages[storedLang]);
 
     const changeLanguage = (lang: string) => {
         setLocale(lang);
         localStorage.setItem('language', lang);
     };
-
-
-    const [currentMessages, setCurrentMessages] = useState(messages[locale]);
 
     useEffect(() => {
         setCurrentMessages(messages[locale]); 
@@ -66,5 +62,6 @@ const App = () => {
         </Provider>
     );
 };
+
 
 export default App;
