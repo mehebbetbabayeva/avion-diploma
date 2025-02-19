@@ -26,7 +26,7 @@
     margin: 20px 0;
 }
 .ceramic-button button{
-    height: 56px;
+
     width: 170px;
     background-color: #F9F9F9;
    font-size: 16px;
@@ -43,6 +43,7 @@
     border-color: transparent;
     border-radius: 8px;
     cursor: pointer;
+    border: 1px solid red;
 }
 .view-collectt:hover{
     background: linear-gradient(90deg, #2A254B, #2A254B);
