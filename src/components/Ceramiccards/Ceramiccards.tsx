@@ -60,7 +60,7 @@ const Ceramiccards: React.FC = () => {
         >
           {
             data && data.map((birMelumat, index) => (
-              <SwiperSlide key={birMelumat.id} data-aos="fade-left" data-aos-delay={index * 200}>
+              <SwiperSlide key={birMelumat.id}  data-aos-delay={index * 200}>
                 <Ceramiccard
                   imageProps={birMelumat.ceramic_image}
                   contextProps={birMelumat.ceramic_context}

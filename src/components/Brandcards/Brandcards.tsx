@@ -23,7 +23,7 @@ const Brandcards: React.FC = () => {
     AOS.init({
       duration: 1000, 
       easing: "ease-in-out",
-      once: false, 
+      once: true, 
       mirror:true   
     });
 
@@ -62,7 +62,7 @@ const Brandcards: React.FC = () => {
         >
           {
             data && data.map((birMelumat, index) => (
-              <SwiperSlide key={birMelumat.id} data-aos="fade-left" data-aos-delay={index * 200}>
+              <SwiperSlide key={birMelumat.id}  data-aos-delay={index * 200}>
                 <Brandcard
                   nameProps={birMelumat.brand_name}
                   contextProps={birMelumat.brand_context}
