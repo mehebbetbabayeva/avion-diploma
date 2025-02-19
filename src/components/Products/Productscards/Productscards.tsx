@@ -4,6 +4,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 interface Melumat {
   id: string;
   product_image: string;
@@ -14,7 +17,6 @@ interface Melumat {
   products_brand: string;
 }
 
-
 const Productscards: React.FC = () => {
   const [data, setData] = useState<Melumat[]>([]);
   const [filteredData, setFilteredData] = useState<Melumat[]>([]);
@@ -24,6 +26,14 @@ const Productscards: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedType, setSelectedType] = useState<string>("");
   const [selectedBrand, setSelectedBrand] = useState<string>("");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,      
+      mirror: true      
+    });
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,8 +85,8 @@ const Productscards: React.FC = () => {
   }, [selectedCategory, selectedType, selectedBrand, data]);
 
   return (
-    <div className="Productscard-container">
-      <div className="filter-container">
+    <div className="Productscard-container" data-aos="fade-up">
+      <div className="filter-container" data-aos="zoom-in">
         <select
           onChange={(e) => setSelectedCategory(e.target.value)}
           value={selectedCategory}
@@ -114,11 +124,15 @@ const Productscards: React.FC = () => {
         </select>
       </div>
 
-    
       <div className="Productscards-container">
         {filteredData.length > 0 ? (
-          filteredData.map((birMelumat) => (
-            <div className="Productscard" key={birMelumat.id}  >
+          filteredData.map((birMelumat, index) => (
+            <div 
+              className="Productscard" 
+              key={birMelumat.id}  
+              data-aos="fade-up" 
+              data-aos-delay={index * 100}
+            >
               <Productscard
                 imageProps={birMelumat.product_image}
                 contextProps={birMelumat.product_context}
@@ -128,11 +142,20 @@ const Productscards: React.FC = () => {
             </div>
           ))
         ) : (
-          <p>No products found.</p>
+          <p data-aos="fade-in">No products found.</p>
         )}
       </div>
-      <Link to="/products" className='popular-button'  style={{textDecoration:"none"}}><button className="view-collectt"><FormattedMessage id='view'/></button></Link> 
 
+      <Link 
+        to="/products" 
+        className='popular-button'  
+        style={{ textDecoration:"none" }}
+        data-aos="zoom-in"
+      >
+        <button className="view-collectt">
+          <FormattedMessage id='view'/>
+        </button>
+      </Link> 
     </div>
   );
 };

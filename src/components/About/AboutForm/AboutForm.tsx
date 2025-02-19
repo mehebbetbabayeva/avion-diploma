@@ -1,19 +1,29 @@
-import React from 'react'
-import "./AboutForm.css"
+import React, { useEffect } from 'react';
+import "./AboutForm.css";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Swal from 'sweetalert2';
 import { FormattedMessage } from 'react-intl';
 import { FaCheckCircle } from "react-icons/fa"; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const validationSchema = yup.object({
     email: yup
       .string()
-      .email('Düzgün emal formatı daxil edin')
+      .email('Düzgün email formatı daxil edin')
       .required('Email ünvanı boş buraxıla bilməz'),
 });
 
 const AboutForm = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: false,      
+            mirror: true      
+        });
+    }, []);
+
     const formik = useFormik({
         initialValues: {
           email: '',
@@ -22,7 +32,7 @@ const AboutForm = () => {
         onSubmit: (values) => {
           Swal.fire({
             icon: 'success',
-            title: 'Mesajınız gönderildi!',
+            title: 'Mesajınız göndərildi!',
             text: `Email: ${values.email}`,
             confirmButtonText: 'Tamam',
           });
@@ -32,8 +42,8 @@ const AboutForm = () => {
 
   return (
     <div>
-      <div className="aboutform-container">
-        <div className="bene-side1">
+      <div className="aboutform-container" data-aos="fade-up">
+        <div className="bene-side1" data-aos="zoom-in">
           <h1><FormattedMessage id='benefittitle' /></h1>
           <p>
             <FormattedMessage id='benefittitle1' />
@@ -42,7 +52,7 @@ const AboutForm = () => {
           </p>
 
        
-          <div className="benefit-list">
+          <div className="benefit-list" data-aos="fade-right">
             <div className="benefit-item">
               <FaCheckCircle className="benefit-icon" />
               <span><FormattedMessage id="exclusiveOffers" /></span>
@@ -57,7 +67,8 @@ const AboutForm = () => {
             </div>
           </div>
 
-          <form className="benefit-form" onSubmit={formik.handleSubmit}>
+      
+          <form className="benefit-form" onSubmit={formik.handleSubmit} data-aos="fade-left">
             <div className="email-container">
               <input
                 type="text"

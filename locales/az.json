@@ -77,6 +77,16 @@
     "umumimebleg":"Ümumi məbləğ",
     "sebetitemizle":"Səbəti Təmizlə",
     "sebeteelave":" Səbətə əlavə et",
-    "mehsulabax":" Məhsula Bax"
+    "mehsulabax":" Məhsula Bax",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "email": "E-poçt",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "sendMessage": "Mesaj Göndər",
+    "required": "Bu sahə tələb olunur",
+    "invalidEmail": "E-poçt düzgün formatda deyil",
+    "invalidPhone": "Telefon 10 rəqəm olmalıdır",
+    "success": "Mesaj uğurla göndərildi!"
 
 }

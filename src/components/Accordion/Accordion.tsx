@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import "./Accordion.css"
+import React, { useState, useEffect } from "react";
+import "./Accordion.css";
 import { FormattedMessage } from "react-intl";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface AccordionItem {
   title: string;
@@ -57,6 +59,10 @@ const accordionData: AccordionItem[] = [
 const Accordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false,    mirror:true    });
+  }, []);
+
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -64,29 +70,38 @@ const Accordion: React.FC = () => {
   return (
     <section className="accordion-section text-center py-5">
       <div className="container">
-        <h2 className="fs-3 text-white py-md-4 text-center py-5" style={{textAlign:"center"}}>
-        <FormattedMessage id='acardiontitle'/>  
+        <h2 
+          className="fs-3 text-white py-md-4 text-center py-5" 
+          data-aos="fade-up"
+        >
+          <FormattedMessage id='acardiontitle'/>  
         </h2>
 
         <div className="row">
-   
+          {/* Left Column */}
           <div className="col-12 col-md-6">
             <div className="accordion-left">
               {accordionData.slice(0, 3).map((item, index) => (
-                <div className="ac" key={index}>
+                <div 
+                  className="ac" 
+                  key={index} 
+                  data-aos="fade-right" 
+                  data-aos-delay={index * 150}
+                >
                   <h2 className="ac-header">
                     <button
                       type="button"
                       className="ac-trigger"
                       onClick={() => toggleAccordion(index)}
                     >
-                          {item.title}
+                      {item.title}
                     </button>
                   </h2>
                   <div
                     className={`ac-panel ${
-                      activeIndex === index ? "d-block" : "d-none"
+                      activeIndex === index ? "d-block aos-animate" : "d-none"
                     }`}
+                    data-aos="fade-down"
                   >
                     <p className="ac-text">{item.content}</p>
                     <a href={item.linkHref} style={{paddingBottom:"30px"}}>{item.linkText}</a>
@@ -100,7 +115,12 @@ const Accordion: React.FC = () => {
           <div className="col-12 col-md-6">
             <div className="accordion-right">
               {accordionData.slice(3).map((item, index) => (
-                <div className="ac" key={index + 3}>
+                <div 
+                  className="ac" 
+                  key={index + 3} 
+                  data-aos="fade-left" 
+                  data-aos-delay={index * 150}
+                >
                   <h2 className="ac-header">
                     <button
                       type="button"
@@ -112,9 +132,9 @@ const Accordion: React.FC = () => {
                   </h2>
                   <div
                     className={`ac-panel ${
-                      activeIndex === index + 3 ? "d-block" : "d-none"
+                      activeIndex === index + 3 ? "d-block aos-animate" : "d-none"
                     }`}
-                    
+                    data-aos="fade-down"
                   >
                     <p className="ac-text">{item.content}</p>
                     <a href={item.linkHref} style={{paddingBottom:"30px"}}>{item.linkText}</a>

@@ -77,5 +77,15 @@
         "umumimebleg": "Total amount",
         "sebetitemizle": "Clear Cart",
         "sebeteelave": "Add to Cart",
-        "mehsulabax": "View Product"
+        "mehsulabax": "View Product",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "sendMessage": "Send Message",
+        "required": "This field is required",
+        "invalidEmail": "Invalid email format",
+        "invalidPhone": "Phone must be 10 digits",
+        "success": "Message sent successfully!"
 }
